@@ -1,0 +1,8 @@
+{
+  "name": "Our Love Story ✦ A Private Journal",
+  "description": "A password-protected romantic timeline and private journal of precious memories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

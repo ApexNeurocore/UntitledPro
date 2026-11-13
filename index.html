@@ -1,0 +1,3401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Story ✦ A Private Journal</title>
+    <meta name="description" content="A password-protected romantic timeline and private journal of precious memories.">
+    <meta property="og:title" content="Our Love Story ✦ A Private Journal">
+    <meta property="og:description" content="A password-protected romantic timeline and private journal of precious memories.">
+    <script>document.title = 'Protected Portal';</script>
+
+    <!-- Google Fonts for romantic typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Dancing+Script:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* ═══════════════════════════════════════════════════════════════
+           🎨  CSS — ALL STYLING & 6 ONE-CLICK THEMES
+           ═══════════════════════════════════════════════════════════════ */
+
+        /* ─── Default Theme: 1. Morning Linen (Light, Airy, Calming) ─── */
+        :root,
+        [data-theme="linen"] {
+            --bg-deep: #faf7f2;
+            --bg-secondary: #f3ede2;
+            --bg-card: rgba(255, 255, 255, 0.88);
+            --bg-card-hover: rgba(255, 255, 255, 0.97);
+            --bg-bar: rgba(250, 247, 242, 0.86);
+            --border-gold: rgba(180, 142, 104, 0.26);
+            --border-gold-bright: rgba(180, 142, 104, 0.55);
+            --text-cream: #2b2320;
+            --text-muted: #6e6059;
+            --text-warm: #8c6244;
+            --accent-gold: #b07d52;
+            --accent-rose: #c9888b;
+            --accent-deep-rose: #b85d68;
+            --orb-1: rgba(238, 213, 195, 0.55);
+            --orb-2: rgba(226, 204, 182, 0.45);
+            --orb-3: rgba(244, 226, 224, 0.5);
+            --shadow-card: 0 12px 36px rgba(60, 45, 35, 0.06), 0 2px 10px rgba(60, 45, 35, 0.04);
+            --shadow-card-hover: 0 18px 48px rgba(60, 45, 35, 0.11), 0 4px 16px rgba(176, 125, 82, 0.08);
+            --particle-rgb: 176, 125, 82;
+            --font-script: 'Great Vibes', cursive;
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Cormorant Garamond', serif;
+            --font-decorative: 'Dancing Script', cursive;
+            --radius-card: 20px;
+            --radius-badge: 40px;
+            --story-font-size: 1.18rem;
+            --story-line-height: 1.9;
+            --transition-smooth: all 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        /* ─── Theme 2: Sakura Mist (Soft Blush Porcelain Light) ─── */
+        [data-theme="sakura"] {
+            --bg-deep: #fdf6f7;
+            --bg-secondary: #f9ebee;
+            --bg-card: rgba(255, 255, 255, 0.90);
+            --bg-card-hover: rgba(255, 255, 255, 0.98);
+            --bg-bar: rgba(253, 246, 247, 0.88);
+            --border-gold: rgba(196, 116, 130, 0.25);
+            --border-gold-bright: rgba(196, 116, 130, 0.52);
+            --text-cream: #362228;
+            --text-muted: #785a62;
+            --text-warm: #a85668;
+            --accent-gold: #c47482;
+            --accent-rose: #d98a98;
+            --accent-deep-rose: #b84a5e;
+            --orb-1: rgba(248, 210, 218, 0.55);
+            --orb-2: rgba(242, 222, 232, 0.5);
+            --orb-3: rgba(252, 230, 220, 0.45);
+            --shadow-card: 0 12px 36px rgba(85, 40, 52, 0.06), 0 2px 10px rgba(85, 40, 52, 0.03);
+            --shadow-card-hover: 0 18px 48px rgba(85, 40, 52, 0.11), 0 4px 16px rgba(196, 116, 130, 0.1);
+            --particle-rgb: 196, 116, 130;
+        }
+
+        /* ─── Theme 3: Matcha Kyoto (Calming Botanical Sage Light) ─── */
+        [data-theme="matcha"] {
+            --bg-deep: #f4f7f4;
+            --bg-secondary: #e8efe9;
+            --bg-card: rgba(255, 255, 255, 0.89);
+            --bg-card-hover: rgba(255, 255, 255, 0.98);
+            --bg-bar: rgba(244, 247, 244, 0.88);
+            --border-gold: rgba(91, 130, 102, 0.26);
+            --border-gold-bright: rgba(91, 130, 102, 0.52);
+            --text-cream: #202e24;
+            --text-muted: #566b5c;
+            --text-warm: #426b4e;
+            --accent-gold: #5b8266;
+            --accent-rose: #7fa388;
+            --accent-deep-rose: #b85d68;
+            --orb-1: rgba(203, 226, 209, 0.55);
+            --orb-2: rgba(220, 235, 222, 0.5);
+            --orb-3: rgba(236, 232, 215, 0.45);
+            --shadow-card: 0 12px 36px rgba(32, 50, 38, 0.06), 0 2px 10px rgba(32, 50, 38, 0.03);
+            --shadow-card-hover: 0 18px 48px rgba(32, 50, 38, 0.11), 0 4px 16px rgba(91, 130, 102, 0.09);
+            --particle-rgb: 91, 130, 102;
+        }
+
+        /* ─── Theme 4: Nordic Cloud (Serene Sky & Mist Light) ─── */
+        [data-theme="nordic"] {
+            --bg-deep: #f3f6fa;
+            --bg-secondary: #e6edf5;
+            --bg-card: rgba(255, 255, 255, 0.90);
+            --bg-card-hover: rgba(255, 255, 255, 0.98);
+            --bg-bar: rgba(243, 246, 250, 0.88);
+            --border-gold: rgba(91, 125, 177, 0.25);
+            --border-gold-bright: rgba(91, 125, 177, 0.52);
+            --text-cream: #1e293b;
+            --text-muted: #58677d;
+            --text-warm: #436496;
+            --accent-gold: #5b7db1;
+            --accent-rose: #829ec9;
+            --accent-deep-rose: #b85d68;
+            --orb-1: rgba(204, 221, 245, 0.55);
+            --orb-2: rgba(219, 228, 248, 0.48);
+            --orb-3: rgba(232, 224, 244, 0.45);
+            --shadow-card: 0 12px 36px rgba(30, 41, 59, 0.06), 0 2px 10px rgba(30, 41, 59, 0.03);
+            --shadow-card-hover: 0 18px 48px rgba(30, 41, 59, 0.11), 0 4px 16px rgba(91, 125, 177, 0.09);
+            --particle-rgb: 91, 125, 177;
+        }
+
+        /* ─── Theme 5: Warm Parchment (Cozy Book Sepia) ─── */
+        [data-theme="parchment"] {
+            --bg-deep: #f4efe6;
+            --bg-secondary: #eae1d3;
+            --bg-card: rgba(252, 249, 242, 0.92);
+            --bg-card-hover: rgba(255, 252, 247, 0.99);
+            --bg-bar: rgba(244, 239, 230, 0.90);
+            --border-gold: rgba(156, 107, 59, 0.28);
+            --border-gold-bright: rgba(156, 107, 59, 0.55);
+            --text-cream: #33261d;
+            --text-muted: #6e5a49;
+            --text-warm: #87582c;
+            --accent-gold: #9c6b3b;
+            --accent-rose: #b88463;
+            --accent-deep-rose: #a84c4c;
+            --orb-1: rgba(230, 211, 184, 0.55);
+            --orb-2: rgba(222, 198, 170, 0.45);
+            --orb-3: rgba(238, 220, 196, 0.5);
+            --shadow-card: 0 12px 36px rgba(55, 38, 22, 0.07), 0 2px 10px rgba(55, 38, 22, 0.04);
+            --shadow-card-hover: 0 18px 48px rgba(55, 38, 22, 0.12), 0 4px 16px rgba(156, 107, 59, 0.1);
+            --particle-rgb: 156, 107, 59;
+        }
+
+        /* ─── Dark Sub-Theme 1: Velvet Twilight (Serene Midnight Dark) ─── */
+        [data-theme="twilight"] {
+            --bg-deep: #11131f;
+            --bg-secondary: #181b2c;
+            --bg-card: rgba(26, 30, 48, 0.84);
+            --bg-card-hover: rgba(32, 37, 58, 0.94);
+            --bg-bar: rgba(20, 23, 38, 0.92);
+            --border-gold: rgba(212, 165, 116, 0.28);
+            --border-gold-bright: rgba(212, 165, 116, 0.58);
+            --text-cream: #f0e6d8;
+            --text-muted: #b5a899;
+            --text-warm: #e4c199;
+            --accent-gold: #d4a574;
+            --accent-rose: #e0acb0;
+            --accent-deep-rose: #d97a88;
+            --orb-1: rgba(62, 50, 92, 0.45);
+            --orb-2: rgba(45, 62, 98, 0.4);
+            --orb-3: rgba(88, 54, 72, 0.35);
+            --shadow-card: 0 15px 40px rgba(0, 0, 0, 0.45), 0 0 50px rgba(212, 165, 116, 0.04);
+            --shadow-card-hover: 0 20px 55px rgba(0, 0, 0, 0.6), 0 0 70px rgba(212, 165, 116, 0.1);
+            --particle-rgb: 212, 165, 116;
+        }
+
+        /* ─── Dark Sub-Theme 2: Sakura Nocturne (Deep Rosewood Night) ─── */
+        [data-theme="sakura-dark"] {
+            --bg-deep: #191116;
+            --bg-secondary: #24171f;
+            --bg-card: rgba(38, 24, 33, 0.85);
+            --bg-card-hover: rgba(48, 30, 42, 0.94);
+            --bg-bar: rgba(28, 18, 25, 0.92);
+            --border-gold: rgba(224, 152, 168, 0.28);
+            --border-gold-bright: rgba(224, 152, 168, 0.58);
+            --text-cream: #f7e8ec;
+            --text-muted: #bfa3ab;
+            --text-warm: #eba8b8;
+            --accent-gold: #df91a3;
+            --accent-rose: #ebb2bf;
+            --accent-deep-rose: #e06d85;
+            --orb-1: rgba(98, 44, 64, 0.42);
+            --orb-2: rgba(74, 36, 56, 0.38);
+            --orb-3: rgba(110, 58, 72, 0.32);
+            --shadow-card: 0 15px 40px rgba(0, 0, 0, 0.48), 0 0 50px rgba(223, 145, 163, 0.05);
+            --shadow-card-hover: 0 20px 55px rgba(0, 0, 0, 0.62), 0 0 70px rgba(223, 145, 163, 0.12);
+            --particle-rgb: 223, 145, 163;
+        }
+
+        /* ─── Dark Sub-Theme 3: Matcha Midnight (Deep Forest Sanctuary) ─── */
+        [data-theme="matcha-dark"] {
+            --bg-deep: #0f1713;
+            --bg-secondary: #16221c;
+            --bg-card: rgba(23, 36, 29, 0.85);
+            --bg-card-hover: rgba(30, 46, 37, 0.94);
+            --bg-bar: rgba(17, 27, 22, 0.92);
+            --border-gold: rgba(132, 179, 146, 0.28);
+            --border-gold-bright: rgba(132, 179, 146, 0.56);
+            --text-cream: #e6f0ea;
+            --text-muted: #9eb3a5;
+            --text-warm: #a8d1b5;
+            --accent-gold: #7eb38f;
+            --accent-rose: #9ec9ab;
+            --accent-deep-rose: #d97a88;
+            --orb-1: rgba(38, 76, 54, 0.42);
+            --orb-2: rgba(30, 62, 48, 0.38);
+            --orb-3: rgba(54, 82, 62, 0.32);
+            --shadow-card: 0 15px 40px rgba(0, 0, 0, 0.48), 0 0 50px rgba(126, 179, 143, 0.05);
+            --shadow-card-hover: 0 20px 55px rgba(0, 0, 0, 0.62), 0 0 70px rgba(126, 179, 143, 0.12);
+            --particle-rgb: 126, 179, 143;
+        }
+
+        /* ─── Dark Sub-Theme 4: Nordic Aurora (Deep Arctic Slate) ─── */
+        [data-theme="nordic-dark"] {
+            --bg-deep: #0e1520;
+            --bg-secondary: #152030;
+            --bg-card: rgba(22, 34, 50, 0.85);
+            --bg-card-hover: rgba(29, 44, 64, 0.94);
+            --bg-bar: rgba(16, 25, 38, 0.92);
+            --border-gold: rgba(130, 168, 218, 0.28);
+            --border-gold-bright: rgba(130, 168, 218, 0.56);
+            --text-cream: #e8eff7;
+            --text-muted: #9cb0c9;
+            --text-warm: #a8c7ed;
+            --accent-gold: #7ea8dc;
+            --accent-rose: #9ec0ea;
+            --accent-deep-rose: #d97a88;
+            --orb-1: rgba(36, 66, 108, 0.42);
+            --orb-2: rgba(32, 54, 92, 0.38);
+            --orb-3: rgba(52, 74, 114, 0.32);
+            --shadow-card: 0 15px 40px rgba(0, 0, 0, 0.48), 0 0 50px rgba(126, 168, 220, 0.05);
+            --shadow-card-hover: 0 20px 55px rgba(0, 0, 0, 0.62), 0 0 70px rgba(126, 168, 220, 0.12);
+            --particle-rgb: 126, 168, 220;
+        }
+
+        /* ─── Reset & Base ─── */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            overscroll-behavior-y: none;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--bg-deep);
+            color: var(--text-cream);
+            line-height: 1.75;
+            overflow-x: hidden;
+            overscroll-behavior-y: none;
+            min-height: 100vh;
+            position: relative;
+            user-select: none;
+            -webkit-user-select: none;
+            transition: background-color 0.65s ease, color 0.5s ease;
+        }
+        #password-input {
+            user-select: text;
+            -webkit-user-select: text;
+        }
+
+        /* ─── Custom Scrollbar ─── */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-deep);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--border-gold);
+            border-radius: 10px;
+            transition: background 0.3s;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--accent-gold);
+        }
+
+        /* ─── Serene Ambient Watercolor Background (Zero-lag pure gradient) ─── */
+        .ambient-backdrop {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            overflow: hidden;
+            background:
+                radial-gradient(circle at 15% 18%, var(--orb-1) 0%, transparent 52%),
+                radial-gradient(circle at 85% 82%, var(--orb-2) 0%, transparent 55%),
+                radial-gradient(circle at 50% 45%, var(--orb-3) 0%, transparent 58%),
+                linear-gradient(160deg, var(--bg-deep) 0%, var(--bg-secondary) 100%);
+            transition: background 0.7s ease;
+        }
+        .ambient-orb {
+            display: none;
+        }
+
+        /* ─── Subtle Silk Canvas Overlay ─── */
+        #star-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+            opacity: 0.55;
+        }
+
+        /* ─── Smooth Shooting & Relaxing Loading Screen (2–3s) ─── */
+        #sanctuary-loader {
+            position: fixed;
+            inset: 0;
+            z-index: 2500;
+            background: linear-gradient(145deg, #faf7f2 0%, #f5ece6 50%, #f9f3ed 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1), visibility 0.75s ease;
+            overflow: hidden;
+        }
+        #sanctuary-loader.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        /* Shooting light trails inside the loading screen */
+        .loader-sky {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        .shooting-breeze {
+            position: absolute;
+            width: 180px;
+            height: 2px;
+            background: linear-gradient(90deg, rgba(176, 125, 82, 0), rgba(176, 125, 82, 0.75), rgba(201, 136, 139, 0.9), rgba(255, 255, 255, 0));
+            border-radius: 999px;
+            filter: drop-shadow(0 0 8px rgba(176, 125, 82, 0.45));
+            transform: rotate(-28deg);
+            animation: shoot-across 2.2s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+        }
+        .shooting-breeze:nth-child(1) {
+            top: 28%;
+            left: -15%;
+            animation-delay: 0.1s;
+        }
+        .shooting-breeze:nth-child(2) {
+            top: 52%;
+            left: -20%;
+            width: 220px;
+            animation-delay: 0.65s;
+        }
+        .shooting-breeze:nth-child(3) {
+            top: 70%;
+            left: -10%;
+            width: 150px;
+            animation-delay: 1.2s;
+        }
+        @keyframes shoot-across {
+            0% {
+                transform: translateX(0) translateY(0) rotate(-25deg) scaleX(0.3);
+                opacity: 0;
+            }
+            20% {
+                opacity: 0.95;
+            }
+            80% {
+                opacity: 0.75;
+            }
+            100% {
+                transform: translateX(135vw) translateY(-45vh) rotate(-25deg) scaleX(1.1);
+                opacity: 0;
+            }
+        }
+
+        .loader-emblem-wrap {
+            position: relative;
+            width: 96px;
+            height: 96px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.75rem;
+        }
+        .loader-ring {
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            border: 1.5px solid rgba(176, 125, 82, 0.22);
+            border-top-color: #b07d52;
+            border-right-color: #c9888b;
+            animation: loader-spin 2.4s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+        }
+        .loader-ring-inner {
+            position: absolute;
+            inset: 12px;
+            border-radius: 50%;
+            border: 1px dashed rgba(201, 136, 139, 0.38);
+            animation: loader-spin 4s linear infinite reverse;
+        }
+        .loader-center-icon {
+            font-size: 1.9rem;
+            color: #b07d52;
+            animation: loader-breathe 2s ease-in-out infinite;
+        }
+        @keyframes loader-spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes loader-breathe {
+            0%, 100% {
+                transform: scale(0.94);
+                opacity: 0.75;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+        }
+
+        .loader-title {
+            font-family: var(--font-heading);
+            font-size: clamp(1.65rem, 3.5vw, 2.25rem);
+            font-weight: 600;
+            color: #2b2320;
+            margin-bottom: 0.45rem;
+            letter-spacing: 0.8px;
+            text-align: center;
+        }
+        .loader-status {
+            font-family: var(--font-body);
+            font-size: 1.08rem;
+            color: #6e6059;
+            font-style: italic;
+            letter-spacing: 0.6px;
+            margin-bottom: 1.6rem;
+            text-align: center;
+        }
+        .loader-progress-track {
+            width: min(260px, 75vw);
+            height: 4px;
+            background: rgba(176, 125, 82, 0.14);
+            border-radius: 999px;
+            overflow: hidden;
+            position: relative;
+        }
+        .loader-progress-bar {
+            height: 100%;
+            width: 0%;
+            border-radius: 999px;
+            background: linear-gradient(90deg, #c9888b, #b07d52);
+            transition: width 0.2s ease-out;
+        }
+
+        /* ─── Serene, Light, Calming Password Overlay ─── */
+        #password-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 1000;
+            background:
+                radial-gradient(circle at 20% 20%, rgba(247, 217, 219, 0.55) 0%, transparent 50%),
+                radial-gradient(circle at 80% 75%, rgba(235, 214, 190, 0.55) 0%, transparent 55%),
+                linear-gradient(155deg, #faf7f2 0%, #f5efe6 55%, #fdf8f5 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), visibility 0.8s ease;
+            padding: 24px;
+        }
+        #password-overlay.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .password-sanctuary-card {
+            width: 100%;
+            max-width: 460px;
+            background: rgba(255, 255, 255, 0.82);
+            border: 1px solid rgba(180, 142, 104, 0.28);
+            border-radius: 28px;
+            padding: 3rem 2.5rem 2.6rem;
+            text-align: center;
+            box-shadow: 0 24px 60px rgba(70, 50, 38, 0.08), 0 4px 16px rgba(70, 50, 38, 0.04);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            position: relative;
+        }
+
+        .lock-badge-circle {
+            width: 68px;
+            height: 68px;
+            margin: 0 auto 1.25rem;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(201, 136, 139, 0.14), rgba(176, 125, 82, 0.16));
+            border: 1px solid rgba(176, 125, 82, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            color: #b07d52;
+            animation: pulse-lock 3.2s ease-in-out infinite;
+        }
+        @keyframes pulse-lock {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(176, 125, 82, 0.15);
+            }
+            50% {
+                transform: scale(1.06);
+                box-shadow: 0 0 0 12px rgba(176, 125, 82, 0);
+            }
+        }
+
+        .lock-kicker {
+            font-family: var(--font-body);
+            font-size: 0.82rem;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            color: #8c6244;
+            margin-bottom: 0.4rem;
+            display: block;
+        }
+
+        .lock-title {
+            font-family: var(--font-heading);
+            font-size: 2.05rem;
+            color: #2b2320;
+            margin-bottom: 0.45rem;
+            letter-spacing: 0.6px;
+            font-weight: 600;
+        }
+
+        .lock-subtitle {
+            font-family: var(--font-body);
+            font-size: 1.05rem;
+            color: #6e6059;
+            margin-bottom: 1.85rem;
+            font-style: italic;
+            letter-spacing: 0.4px;
+        }
+
+        .password-input-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(250, 247, 242, 0.9);
+            border: 1.5px solid rgba(176, 125, 82, 0.32);
+            border-radius: 50px;
+            padding: 0.4rem 0.45rem 0.4rem 1.25rem;
+            transition: var(--transition-smooth);
+        }
+        .password-input-wrapper:focus-within {
+            border-color: #b07d52;
+            box-shadow: 0 0 0 4px rgba(176, 125, 82, 0.12);
+            background: #ffffff;
+        }
+
+        .password-input-wrapper input {
+            background: transparent;
+            border: none;
+            outline: none;
+            color: #2b2320;
+            font-family: var(--font-body);
+            font-size: 1.08rem;
+            letter-spacing: 1.5px;
+            width: 100%;
+            min-width: 0;
+            padding: 0.45rem 0;
+        }
+        .password-input-wrapper input::placeholder {
+            color: rgba(110, 96, 89, 0.55);
+            letter-spacing: 1px;
+            font-style: italic;
+            font-size: 0.98rem;
+        }
+
+        .password-toggle-eye {
+            background: transparent;
+            border: none;
+            color: #8c6244;
+            cursor: pointer;
+            padding: 0.4rem 0.55rem;
+            font-size: 0.85rem;
+            font-family: var(--font-body);
+            border-radius: 999px;
+            transition: background 0.2s, color 0.2s;
+            white-space: nowrap;
+        }
+        .password-toggle-eye:hover {
+            background: rgba(176, 125, 82, 0.1);
+            color: #2b2320;
+        }
+
+        .password-submit-btn {
+            background: linear-gradient(135deg, #b07d52 0%, #c48778 100%);
+            color: #ffffff;
+            border: none;
+            border-radius: 50px;
+            padding: 0.65rem 1.45rem;
+            font-family: var(--font-heading);
+            font-size: 0.92rem;
+            font-weight: 500;
+            letter-spacing: 0.8px;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            white-space: nowrap;
+            box-shadow: 0 6px 18px rgba(176, 125, 82, 0.25);
+        }
+        .password-submit-btn:hover {
+            transform: translateY(-1.5px);
+            box-shadow: 0 10px 24px rgba(176, 125, 82, 0.34);
+            filter: brightness(1.04);
+        }
+        .password-submit-btn:active {
+            transform: translateY(0);
+        }
+        .password-submit-btn:disabled {
+            opacity: 0.55;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .password-error {
+            color: #b85d68;
+            font-size: 0.95rem;
+            font-style: italic;
+            margin-top: 1rem;
+            min-height: 1.5rem;
+            opacity: 0;
+            transition: opacity 0.35s;
+            letter-spacing: 0.3px;
+        }
+        .password-error.show {
+            opacity: 1;
+        }
+
+        .password-security-note {
+            margin-top: 0.75rem;
+            font-size: 0.82rem;
+            color: rgba(110, 96, 89, 0.75);
+            letter-spacing: 0.4px;
+        }
+
+        /* ─── Main Content (Completely Hidden Before Login) ─── */
+        .main-content {
+            position: relative;
+            z-index: 10;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.9s ease;
+        }
+        .main-content.visible {
+            display: block;
+            opacity: 1;
+        }
+
+        /* ─── Top Settings Tab Button & Settings Drawer Modal ─── */
+        .sanctuary-top-bar {
+            position: fixed;
+            top: 18px;
+            right: 22px;
+            z-index: 120;
+        }
+        .settings-tab-trigger {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--bg-bar);
+            color: var(--text-cream);
+            border: 1px solid var(--border-gold-bright);
+            border-radius: 999px;
+            padding: 9px 18px;
+            font-family: var(--font-heading);
+            font-size: 0.88rem;
+            font-weight: 500;
+            letter-spacing: 0.6px;
+            cursor: pointer;
+            box-shadow: var(--shadow-card);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            transition: var(--transition-smooth);
+        }
+        .settings-tab-trigger:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-card-hover);
+            background: var(--bg-card-hover);
+        }
+        .settings-tab-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--accent-gold);
+            display: inline-block;
+        }
+
+        /* Settings Modal Backdrop & Panel */
+        .settings-backdrop {
+            position: fixed;
+            inset: 0;
+            z-index: 1500;
+            background: rgba(15, 14, 20, 0.36);
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+            padding: 70px 22px 24px;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: opacity 0.32s ease, visibility 0.32s ease;
+        }
+        .settings-backdrop.open {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        .settings-panel {
+            width: 100%;
+            max-width: 400px;
+            background: var(--bg-bar);
+            color: var(--text-cream);
+            border: 1px solid var(--border-gold-bright);
+            border-radius: 24px;
+            padding: 1.65rem 1.6rem;
+            box-shadow: 0 24px 60px rgba(0, 0, 0, 0.22);
+            backdrop-filter: blur(22px);
+            -webkit-backdrop-filter: blur(22px);
+            transform: translateY(-10px) scale(0.98);
+            transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), background 0.45s ease, color 0.45s ease;
+            max-height: calc(100vh - 96px);
+            overflow-y: auto;
+        }
+        .settings-backdrop.open .settings-panel {
+            transform: translateY(0) scale(1);
+        }
+
+        .settings-panel-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 0.9rem;
+            margin-bottom: 1.15rem;
+            border-bottom: 1px solid var(--border-gold);
+        }
+        .settings-panel-title {
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text-cream);
+            letter-spacing: 0.5px;
+        }
+        .settings-close-btn {
+            background: transparent;
+            border: 1px solid var(--border-gold);
+            color: var(--text-muted);
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+        .settings-close-btn:hover {
+            color: var(--text-cream);
+            border-color: var(--border-gold-bright);
+        }
+
+        .settings-section {
+            margin-bottom: 1.35rem;
+        }
+        .settings-section:last-child {
+            margin-bottom: 0;
+        }
+        .settings-section-label {
+            display: block;
+            font-family: var(--font-heading);
+            font-size: 0.76rem;
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+            color: var(--text-muted);
+            margin-bottom: 0.65rem;
+        }
+
+        /* 2 Main Themes Segmented Switch (Light vs Dark) */
+        .main-theme-segmented {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            background: rgba(176, 125, 82, 0.08);
+            padding: 5px;
+            border-radius: 14px;
+            border: 1px solid var(--border-gold);
+        }
+        .main-mode-btn {
+            background: transparent;
+            border: 1px solid transparent;
+            border-radius: 10px;
+            padding: 8px 12px;
+            font-family: var(--font-heading);
+            font-size: 0.88rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.25s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+        .main-mode-btn.active {
+            background: var(--bg-card);
+            color: var(--text-cream);
+            border-color: var(--border-gold-bright);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Sub-Themes Grid under Light or Dark */
+        .subtheme-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+        .subtheme-grid.hidden {
+            display: none;
+        }
+        .theme-pill-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-gold);
+            border-radius: 12px;
+            padding: 9px 12px;
+            font-family: var(--font-body);
+            font-size: 0.96rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.22s ease;
+            text-align: left;
+        }
+        .theme-pill-btn:hover {
+            color: var(--text-cream);
+            border-color: var(--border-gold-bright);
+            transform: translateY(-1px);
+        }
+        .theme-pill-btn.active {
+            color: var(--text-cream);
+            border-color: var(--accent-gold);
+            box-shadow: 0 0 0 1.5px var(--accent-gold);
+        }
+        .theme-swatch-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 1px solid rgba(128, 128, 128, 0.35);
+            flex-shrink: 0;
+        }
+
+        /* Reading Comfort & Cozy Mode inside Settings */
+        .settings-row-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-gold);
+            border-radius: 14px;
+            padding: 10px 14px;
+            margin-bottom: 10px;
+        }
+        .cozy-mode-btn {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-gold-bright);
+            border-radius: 12px;
+            padding: 10px 14px;
+            font-family: var(--font-heading);
+            font-size: 0.86rem;
+            font-weight: 500;
+            color: var(--text-cream);
+            cursor: pointer;
+            transition: all 0.25s ease;
+            margin-bottom: 10px;
+        }
+        .cozy-mode-btn:hover {
+            background: rgba(176, 125, 82, 0.12);
+        }
+        .cozy-mode-btn.active {
+            background: var(--accent-gold);
+            color: #ffffff;
+            border-color: var(--accent-gold);
+        }
+
+        .font-size-controls {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .font-size-btn {
+            background: transparent;
+            border: 1px solid var(--border-gold);
+            border-radius: 8px;
+            padding: 5px 11px;
+            font-family: var(--font-heading);
+            font-size: 0.8rem;
+            color: var(--text-cream);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .font-size-btn:hover {
+            border-color: var(--border-gold-bright);
+            background: rgba(176, 125, 82, 0.1);
+        }
+
+        /* ─── Hero Section ─── */
+        .hero {
+            min-height: 82vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px 60px;
+            position: relative;
+            z-index: 5;
+            transition: min-height 0.5s ease, padding 0.5s ease;
+        }
+
+        .hero-heart-top {
+            font-size: 1.5rem;
+            color: var(--accent-rose);
+            opacity: 0.8;
+            animation: pulse-heart 3.5s ease-in-out infinite;
+            margin-bottom: 1rem;
+            letter-spacing: 4px;
+        }
+        @keyframes pulse-heart {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 0.65;
+            }
+            50% {
+                transform: scale(1.12);
+                opacity: 1;
+            }
+        }
+
+        .hero-title {
+            font-family: var(--font-script);
+            font-size: clamp(2.8rem, 7vw, 5.2rem);
+            color: var(--text-cream);
+            font-weight: 400;
+            letter-spacing: 1.5px;
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+            transition: color 0.4s ease;
+        }
+
+        .hero-divider {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 1rem 0 0.75rem;
+        }
+        .hero-divider-line {
+            width: 64px;
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--accent-gold), transparent);
+        }
+        .hero-divider-heart {
+            font-size: 1.1rem;
+            color: var(--accent-rose);
+        }
+
+        .hero-subtitle {
+            font-family: var(--font-decorative);
+            font-size: clamp(1.15rem, 2.5vw, 1.55rem);
+            color: var(--text-warm);
+            font-weight: 400;
+            letter-spacing: 1.5px;
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 2.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 0.75rem;
+        }
+        .hero-stat {
+            text-align: center;
+        }
+        .hero-stat-number {
+            font-family: var(--font-heading);
+            font-size: 1.9rem;
+            font-weight: 600;
+            color: var(--accent-gold);
+            display: block;
+        }
+        .hero-stat-label {
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .scroll-hint {
+            position: absolute;
+            bottom: 1.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.35rem;
+            color: var(--text-muted);
+            font-size: 0.78rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.78;
+            cursor: pointer;
+            user-select: none;
+            animation: bounce-hint 2.4s ease-in-out infinite;
+            transition: opacity 0.3s ease;
+        }
+        .scroll-hint:hover {
+            opacity: 1;
+        }
+        .scroll-hint-arrow {
+            font-size: 1.2rem;
+            color: var(--accent-gold);
+        }
+        @keyframes bounce-hint {
+            0%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            50% {
+                transform: translateX(-50%) translateY(-6px);
+            }
+        }
+
+        /* ─── Stories Section ─── */
+        .stories-section {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+            position: relative;
+            transition: max-width 0.5s ease;
+        }
+
+        .stories-section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .stories-section-header h2 {
+            font-family: var(--font-script);
+            font-size: clamp(2.1rem, 4vw, 2.9rem);
+            color: var(--text-cream);
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-bottom: 0.4rem;
+        }
+        .stories-section-header p {
+            font-family: var(--font-body);
+            color: var(--text-muted);
+            font-style: italic;
+            font-size: 1.05rem;
+            letter-spacing: 0.4px;
+        }
+
+        /* ─── Timeline Line ─── */
+        .timeline-line {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 120px;
+            bottom: 80px;
+            width: 1.5px;
+            background: linear-gradient(to bottom, transparent, var(--border-gold) 5%, var(--border-gold) 95%, transparent);
+            z-index: 1;
+            opacity: 0.65;
+            transition: opacity 0.4s ease;
+        }
+        @media (max-width: 640px) {
+            .timeline-line {
+                left: 25px;
+                top: 80px;
+            }
+        }
+
+        /* ─── Story Card (GPU-Composited for 120fps Silky Scrolling) ─── */
+        .story-card {
+            position: relative;
+            z-index: 5;
+            background: var(--bg-card);
+            border: 1px solid var(--border-gold);
+            border-radius: var(--radius-card);
+            padding: 2.6rem 2.7rem 2.3rem;
+            margin-bottom: 2.8rem;
+            box-shadow: var(--shadow-card);
+            opacity: 0;
+            transform: translate3d(0, 24px, 0);
+            will-change: transform, opacity;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            transition:
+                transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+                opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+                background-color 0.35s ease,
+                border-color 0.35s ease,
+                box-shadow 0.35s ease;
+            max-width: 720px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .story-card.in-view {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+        .story-card.in-view:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--border-gold-bright);
+            box-shadow: var(--shadow-card-hover);
+            transform: translate3d(0, -3px, 0);
+        }
+
+        /* Card decorative corner */
+        .story-card::before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            width: 36px;
+            height: 36px;
+            border-top: 2px solid var(--accent-gold);
+            border-left: 2px solid var(--accent-gold);
+            border-radius: var(--radius-card) 0 0 0;
+            opacity: 0.45;
+            pointer-events: none;
+        }
+        .story-card::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            right: -1px;
+            width: 36px;
+            height: 36px;
+            border-bottom: 2px solid var(--accent-gold);
+            border-right: 2px solid var(--accent-gold);
+            border-radius: 0 0 var(--radius-card) 0;
+            opacity: 0.45;
+            pointer-events: none;
+        }
+
+        /* Card date badge */
+        .story-date-badge {
+            display: inline-block;
+            font-family: var(--font-decorative);
+            font-size: 1.05rem;
+            color: var(--text-warm);
+            background: rgba(176, 125, 82, 0.10);
+            border: 1px solid var(--border-gold);
+            border-radius: var(--radius-badge);
+            padding: 0.3rem 1.3rem;
+            letter-spacing: 1.2px;
+            margin-bottom: 1.15rem;
+            transition: var(--transition-smooth);
+        }
+
+        /* Card title */
+        .story-title {
+            font-family: var(--font-heading);
+            font-size: 1.72rem;
+            font-weight: 600;
+            color: var(--text-cream);
+            letter-spacing: 0.4px;
+            margin-bottom: 0.85rem;
+            line-height: 1.3;
+            position: relative;
+            display: block;
+        }
+        .story-title::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 48px;
+            height: 2px;
+            background: linear-gradient(to right, var(--accent-gold), transparent);
+            border-radius: 2px;
+            transition: width 0.45s ease;
+        }
+        .story-card:hover .story-title::after {
+            width: 110px;
+        }
+
+        /* Card quote mark decoration */
+        .story-quote-mark {
+            font-family: var(--font-script);
+            font-size: 2.8rem;
+            color: var(--accent-gold);
+            opacity: 0.32;
+            line-height: 1;
+            margin-bottom: -0.4rem;
+            user-select: none;
+        }
+
+        /* Card content */
+        .story-content {
+            font-family: var(--font-body);
+            font-size: var(--story-font-size);
+            color: var(--text-cream);
+            line-height: var(--story-line-height);
+            letter-spacing: 0.25px;
+            word-wrap: break-word;
+        }
+        .story-text-segment {
+            white-space: pre-wrap;
+        }
+
+        /* ─── Inline Image & Audio Blocks Inside Story Cards ─── */
+        .story-inline-image-figure {
+            margin: 1.5rem 0;
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid var(--border-gold);
+            background: rgba(176, 125, 82, 0.05);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+            text-align: center;
+        }
+        .story-inline-image-figure img {
+            display: block;
+            width: 100%;
+            max-height: 460px;
+            object-fit: cover;
+            cursor: zoom-in;
+            transition: transform 0.4s ease;
+        }
+        .story-inline-image-figure img:hover {
+            transform: scale(1.015);
+        }
+        .story-inline-image-caption {
+            font-family: var(--font-body);
+            font-style: italic;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            padding: 0.65rem 1rem;
+            border-top: 1px solid var(--border-gold);
+            background: var(--bg-card);
+        }
+
+        .story-inline-audio-box {
+            margin: 1.4rem 0;
+            padding: 1rem 1.25rem;
+            border-radius: 14px;
+            border: 1px solid var(--border-gold);
+            background: rgba(176, 125, 82, 0.07);
+            display: flex;
+            flex-direction: column;
+            gap: 0.55rem;
+        }
+        .story-inline-audio-header {
+            display: flex;
+            align-items: center;
+            gap: 0.55rem;
+            font-family: var(--font-heading);
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-warm);
+        }
+        .story-inline-audio-box audio {
+            width: 100%;
+            height: 38px;
+            outline: none;
+        }
+
+        /* Card number badge */
+        .story-number {
+            position: absolute;
+            top: 1.35rem;
+            right: 1.6rem;
+            font-family: var(--font-heading);
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            letter-spacing: 2px;
+            opacity: 0.65;
+            user-select: none;
+        }
+
+        /* Card heart icon */
+        .story-heart-icon {
+            text-align: center;
+            margin-top: 1.4rem;
+            font-size: 1.05rem;
+            color: var(--accent-rose);
+            opacity: 0.55;
+            transition: opacity 0.35s, transform 0.35s;
+            cursor: default;
+            user-select: none;
+        }
+        .story-card:hover .story-heart-icon {
+            opacity: 0.9;
+            transform: scale(1.12);
+        }
+
+        /* Timeline node on the line */
+        .story-card .timeline-node {
+            position: absolute;
+            left: -31px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 11px;
+            height: 11px;
+            background: var(--accent-gold);
+            border-radius: 50%;
+            box-shadow: 0 0 12px rgba(176, 125, 82, 0.45);
+            z-index: 6;
+        }
+        @media (max-width: 640px) {
+            .story-card .timeline-node {
+                left: -17px;
+            }
+        }
+
+        /* ─── Cozy Reading Mode (Distraction-Free Book Feel) ─── */
+        body.cozy-reading-mode {
+            --story-font-size: 1.32rem;
+            --story-line-height: 2.1;
+        }
+        body.cozy-reading-mode .hero {
+            min-height: 36vh;
+            padding: 28px 20px 20px;
+        }
+        body.cozy-reading-mode .hero-stats,
+        body.cozy-reading-mode .scroll-hint,
+        body.cozy-reading-mode .timeline-line,
+        body.cozy-reading-mode .story-card .timeline-node {
+            display: none !important;
+        }
+        body.cozy-reading-mode .stories-section {
+            max-width: 680px;
+            padding-top: 10px;
+        }
+        body.cozy-reading-mode .story-card {
+            max-width: 660px;
+            padding: 3.1rem 3.2rem 2.8rem;
+            margin-bottom: 2.2rem;
+            border-radius: 14px;
+            box-shadow: 0 10px 32px rgba(0, 0, 0, 0.05);
+        }
+
+        /* ─── Lightbox Modal for Clicking Inline Story Images ─── */
+        #image-lightbox {
+            position: fixed;
+            inset: 0;
+            z-index: 2200;
+            background: rgba(20, 16, 14, 0.85);
+            backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        #image-lightbox.open {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+        #image-lightbox img {
+            max-width: 92vw;
+            max-height: 82vh;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+        #image-lightbox-caption {
+            margin-top: 12px;
+            color: #f5efe6;
+            font-family: var(--font-body);
+            font-size: 1.05rem;
+            font-style: italic;
+        }
+        #image-lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 24px;
+            background: rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 999px;
+            padding: 6px 14px;
+            font-family: var(--font-heading);
+            font-size: 0.85rem;
+            cursor: pointer;
+        }
+
+        /* ─── Security Notice Toast & Active DevTools Lockdown Shield ─── */
+        #security-toast {
+            position: fixed;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%) translateY(20px);
+            z-index: 3000;
+            background: var(--bg-secondary);
+            color: var(--text-cream);
+            border: 1.5px solid var(--border-gold-bright);
+            border-radius: 999px;
+            padding: 0.6rem 1.45rem;
+            font-family: var(--font-heading);
+            font-size: 0.88rem;
+            box-shadow: var(--shadow-card-hover);
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: all 0.35s ease;
+        }
+        #security-toast.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        #devtools-shield {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: #f6f1ea;
+            color: #2b2320;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            font-family: var(--font-heading);
+        }
+        #devtools-shield.active {
+            display: flex;
+        }
+        #devtools-shield h2 {
+            font-size: 1.65rem;
+            margin-bottom: 0.6rem;
+            letter-spacing: 0.5px;
+        }
+        #devtools-shield p {
+            font-family: var(--font-body);
+            font-size: 1.08rem;
+            color: #6e6059;
+            max-width: 420px;
+        }
+
+        /* ─── Footer ─── */
+        .footer {
+            text-align: center;
+            padding: 3rem 20px 6.5rem;
+            position: relative;
+            z-index: 5;
+            border-top: 1px solid var(--border-gold);
+            margin-top: 1rem;
+        }
+        .footer-heart {
+            font-size: 1.6rem;
+            color: var(--accent-rose);
+            animation: pulse-heart 2.8s ease-in-out infinite;
+            display: block;
+            margin-bottom: 0.75rem;
+        }
+        .footer-text {
+            font-family: var(--font-decorative);
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            letter-spacing: 1.2px;
+            font-style: italic;
+        }
+        .footer-subtext {
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            opacity: 0.75;
+            margin-top: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        /* ─── Soothing, Smooth & Cute Bottom Reading Progress Bar ─── */
+        .reading-progress-dock {
+            position: fixed;
+            bottom: 18px;
+            left: 50%;
+            transform: translate3d(-50%, 0, 0);
+            z-index: 115;
+            display: inline-flex;
+            align-items: center;
+            gap: 11px;
+            background: var(--bg-secondary);
+            color: var(--text-cream);
+            border: 1.5px solid var(--border-gold-bright);
+            border-radius: 999px;
+            padding: 8px 18px;
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16), 0 2px 8px rgba(176, 125, 82, 0.14);
+            pointer-events: none;
+            user-select: none;
+            transition: background-color 0.45s ease, border-color 0.45s ease, transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .reading-cute-icon {
+            font-size: 0.92rem;
+            color: var(--accent-rose);
+            display: inline-block;
+            animation: gentle-sway 3.2s ease-in-out infinite;
+        }
+        @keyframes gentle-sway {
+            0%, 100% { transform: scale(1) rotate(-4deg); }
+            50% { transform: scale(1.14) rotate(6deg); }
+        }
+        .reading-chapter-status {
+            font-family: var(--font-heading);
+            font-size: 0.78rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+        .reading-bar-track {
+            width: 108px;
+            height: 7px;
+            border-radius: 999px;
+            background: rgba(176, 125, 82, 0.16);
+            overflow: hidden;
+            position: relative;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.06);
+        }
+        .reading-bar-fill {
+            height: 100%;
+            width: 0%;
+            border-radius: 999px;
+            background: linear-gradient(90deg, var(--accent-gold) 0%, var(--accent-rose) 100%);
+            transition: width 0.08s linear;
+            position: relative;
+        }
+        .reading-pct-badge {
+            font-family: var(--font-heading);
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--text-warm);
+            min-width: 58px;
+            text-align: right;
+            letter-spacing: 0.4px;
+            white-space: nowrap;
+        }
+
+        /* Whisper-thin bottom edge silk ribbon */
+        .reading-progress-ribbon {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            z-index: 116;
+            background: rgba(176, 125, 82, 0.08);
+            pointer-events: none;
+            overflow: hidden;
+        }
+        .reading-ribbon-fill {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, var(--accent-gold), var(--accent-rose));
+            transition: width 0.08s linear;
+        }
+
+        /* ─── Back to Top Button ─── */
+        #back-to-top {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.8rem;
+            z-index: 118;
+            background: var(--bg-card);
+            border: 1.5px solid var(--border-gold);
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.1rem;
+            color: var(--accent-gold);
+            box-shadow: var(--shadow-card);
+            transition: var(--transition-smooth);
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+        #back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+        #back-to-top:hover {
+            border-color: var(--border-gold-bright);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-card-hover);
+        }
+
+        /* ─── Decoy Study Portal (Class 11 NCERT PCMB Formula & Notes Hub) ─── */
+        .decoy-study-portal {
+            display: none;
+            position: relative;
+            z-index: 25;
+            min-height: 100vh;
+            background: #f8fafc;
+            color: #0f172a;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            padding: 0 0 4rem;
+        }
+        .decoy-study-portal.visible {
+            display: block;
+        }
+        .decoy-top-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(255, 255, 255, 0.96);
+            border-bottom: 1px solid #e2e8f0;
+            padding: 0.9rem 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+            box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+        }
+        .decoy-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .decoy-badge {
+            background: #1e293b;
+            color: #f8fafc;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 0.28rem 0.65rem;
+            border-radius: 6px;
+            text-transform: uppercase;
+        }
+        .decoy-brand-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #0f172a;
+        }
+        .decoy-nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .decoy-search-input {
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            padding: 0.45rem 0.85rem;
+            font-size: 0.88rem;
+            color: #0f172a;
+            background: #f8fafc;
+            outline: none;
+            width: 220px;
+            user-select: text;
+            -webkit-user-select: text;
+        }
+        .decoy-search-input:focus {
+            border-color: #3b82f6;
+            background: #ffffff;
+        }
+        .decoy-lock-btn {
+            background: #f1f5f9;
+            color: #334155;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            padding: 0.45rem 0.9rem;
+            font-size: 0.84rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .decoy-lock-btn:hover {
+            background: #e2e8f0;
+            color: #0f172a;
+        }
+        .decoy-container {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        .decoy-hero-banner {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            color: #f8fafc;
+            border-radius: 16px;
+            padding: 2rem 2.2rem;
+            margin-bottom: 1.75rem;
+            box-shadow: 0 10px 28px rgba(15, 23, 42, 0.12);
+        }
+        .decoy-hero-banner h1 {
+            font-size: clamp(1.5rem, 3vw, 2.1rem);
+            font-weight: 700;
+            margin-bottom: 0.45rem;
+            letter-spacing: -0.3px;
+        }
+        .decoy-hero-banner p {
+            color: #94a3b8;
+            font-size: 0.96rem;
+            margin-bottom: 1.25rem;
+        }
+        .decoy-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.55rem;
+            margin-bottom: 1.75rem;
+        }
+        .decoy-tab-btn {
+            background: #ffffff;
+            color: #475569;
+            border: 1px solid #cbd5e1;
+            border-radius: 10px;
+            padding: 0.6rem 1.15rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .decoy-tab-btn:hover {
+            border-color: #64748b;
+            color: #0f172a;
+        }
+        .decoy-tab-btn.active {
+            background: #0f172a;
+            color: #ffffff;
+            border-color: #0f172a;
+            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+        }
+        .decoy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+            gap: 1.25rem;
+        }
+        @media (max-width: 640px) {
+            .decoy-grid {
+                grid-template-columns: 1fr;
+            }
+            .decoy-search-input {
+                width: 100%;
+            }
+        }
+        .decoy-note-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 14px;
+            padding: 1.45rem 1.55rem;
+            box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        .decoy-card-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.5rem;
+        }
+        .decoy-subject-tag {
+            font-size: 0.74rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.7px;
+            padding: 0.24rem 0.65rem;
+            border-radius: 6px;
+        }
+        .decoy-subject-tag.maths { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
+        .decoy-subject-tag.physics { background: #fef3c7; color: #b45309; border: 1px solid #fde68a; }
+        .decoy-subject-tag.chemistry { background: #ecfdf5; color: #047857; border: 1px solid #a7f3d0; }
+        .decoy-subject-tag.biology { background: #fae8ff; color: #86198f; border: 1px solid #f5d0fe; }
+        .decoy-chapter-code {
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: #64748b;
+        }
+        .decoy-note-title {
+            font-size: 1.12rem;
+            font-weight: 700;
+            color: #0f172a;
+            line-height: 1.35;
+        }
+        .decoy-formula-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.55rem;
+            margin-top: 0.2rem;
+        }
+        .decoy-formula-item {
+            background: #f8fafc;
+            border-left: 3px solid #64748b;
+            padding: 0.55rem 0.8rem;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.91rem;
+            line-height: 1.55;
+            color: #1e293b;
+        }
+        .decoy-formula-item strong {
+            color: #0f172a;
+            font-weight: 600;
+        }
+        .decoy-formula-item code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            background: #e2e8f0;
+            color: #0f172a;
+            padding: 0.12rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+
+        /* ─── Responsive Design ─── */
+        @media (max-width: 768px) {
+            .sanctuary-bar-inner {
+                border-radius: 20px;
+                justify-content: center;
+                padding: 10px 12px;
+            }
+            .theme-switcher-group {
+                justify-content: center;
+            }
+            .story-card,
+            body.cozy-reading-mode .story-card {
+                padding: 1.85rem 1.5rem 1.65rem;
+                margin-bottom: 2.1rem;
+            }
+            .story-title {
+                font-size: 1.42rem;
+            }
+            .hero-stats {
+                gap: 1.5rem;
+            }
+            .hero-stat-number {
+                font-size: 1.5rem;
+            }
+            .password-sanctuary-card {
+                padding: 2.2rem 1.5rem 2rem;
+            }
+            .lock-title {
+                font-size: 2.2rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .story-card {
+                padding: 1.5rem 1.2rem 1.35rem;
+                border-radius: 14px;
+            }
+            .story-date-badge {
+                font-size: 0.92rem;
+                padding: 0.25rem 1rem;
+            }
+            .story-title {
+                font-size: 1.28rem;
+            }
+            .hero-title {
+                font-size: 2.35rem;
+            }
+            .password-input-wrapper {
+                flex-wrap: wrap;
+                border-radius: 20px;
+                padding: 0.75rem;
+                gap: 0.5rem;
+            }
+            .password-submit-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         🌸  CALMING WATERCOLOR AURORA BACKGROUND + SILK CANVAS
+         ═══════════════════════════════════════════════════════════════ -->
+    <div class="ambient-backdrop" aria-hidden="true">
+        <div class="ambient-orb ambient-orb-1"></div>
+        <div class="ambient-orb ambient-orb-2"></div>
+        <div class="ambient-orb ambient-orb-3"></div>
+    </div>
+    <canvas id="star-canvas" aria-hidden="true"></canvas>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         🌠  SMOOTH SOOTHING LOADING SCREEN (DISCREET BEFORE LOGIN)
+         ═══════════════════════════════════════════════════════════════ -->
+    <div id="sanctuary-loader" role="status" aria-live="polite">
+        <div class="loader-sky" aria-hidden="true">
+            <div class="shooting-breeze"></div>
+            <div class="shooting-breeze"></div>
+            <div class="shooting-breeze"></div>
+        </div>
+        <div class="loader-emblem-wrap" aria-hidden="true">
+            <div class="loader-ring"></div>
+            <div class="loader-ring-inner"></div>
+            <span class="loader-center-icon" id="loader-center-icon">◈</span>
+        </div>
+        <p class="loader-title" id="loader-title">Protected Portal</p>
+        <p class="loader-status" id="loader-status">Initializing secure environment…</p>
+        <div class="loader-progress-track" aria-hidden="true">
+            <div class="loader-progress-bar" id="loader-progress-bar"></div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         🔒  DISCREET, CALM & SAFE PASSWORD GATE (NO SPOILERS BEFORE LOGIN)
+         ═══════════════════════════════════════════════════════════════ -->
+    <div id="password-overlay">
+        <div class="password-sanctuary-card">
+            <div class="lock-badge-circle" aria-hidden="true">◈</div>
+            <span class="lock-kicker">Restricted Access</span>
+            <h1 class="lock-title">Authentication Required</h1>
+            <p class="lock-subtitle">Please enter your alphanumeric passcode to continue</p>
+            <div class="password-input-wrapper">
+                <input type="password" id="password-input" aria-label="Access passcode" placeholder="Enter passcode…" maxlength="100" autocomplete="off">
+                <button type="button" class="password-toggle-eye" id="password-toggle-eye" aria-label="Show passcode">Show</button>
+                <button type="button" class="password-submit-btn" id="password-submit">Continue →</button>
+            </div>
+            <p class="password-error" id="password-error" role="alert">Invalid passcode. Please try again.</p>
+            <p class="password-security-note">End-to-end protected session · Alphanumeric passcode required</p>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         📖  MAIN CONTENT (HIDDEN & UNPOPULATED UNTIL PASSWORD VERIFIED)
+         ═══════════════════════════════════════════════════════════════ -->
+    <div class="main-content" id="main-content" aria-hidden="true">
+
+        <!-- ─── Settings Tab Button & Settings Drawer Modal ─── -->
+        <div class="sanctuary-top-bar">
+            <button type="button" class="settings-tab-trigger" id="settings-tab-trigger" aria-expanded="false" aria-controls="settings-backdrop">
+                <span class="settings-tab-dot" aria-hidden="true"></span>
+                <span>⚙ Settings</span>
+            </button>
+        </div>
+
+        <div class="settings-backdrop" id="settings-backdrop" role="dialog" aria-modal="true" aria-labelledby="settings-panel-title">
+            <div class="settings-panel">
+                <div class="settings-panel-header">
+                    <h2 class="settings-panel-title" id="settings-panel-title">Sanctuary Settings</h2>
+                    <button type="button" class="settings-close-btn" id="settings-close-btn" aria-label="Close settings">✕</button>
+                </div>
+
+                <!-- 1. Main Theme Mode: Light vs Dark -->
+                <div class="settings-section">
+                    <span class="settings-section-label">1. Main Theme</span>
+                    <div class="main-theme-segmented" role="group" aria-label="Main theme mode">
+                        <button type="button" class="main-mode-btn active" id="mode-light-btn" data-main-mode="light">
+                            ☀ Light Theme
+                        </button>
+                        <button type="button" class="main-mode-btn" id="mode-dark-btn" data-main-mode="dark">
+                            ☾ Dark Theme
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 2. Sub-Themes (Filtered by Light or Dark) -->
+                <div class="settings-section">
+                    <span class="settings-section-label" id="subthemes-group-label">2. Light Sub-Themes</span>
+
+                    <!-- Light Sub-Themes -->
+                    <div class="subtheme-grid" id="light-subthemes-grid" role="group" aria-label="Light sub-themes">
+                        <button type="button" class="theme-pill-btn active" data-theme-choice="linen" data-theme-mode="light">
+                            <span class="theme-swatch-dot" style="background: #f5ebe0;"></span>
+                            Morning Linen
+                        </button>
+                        <button type="button" class="theme-pill-btn" data-theme-choice="sakura" data-theme-mode="light">
+                            <span class="theme-swatch-dot" style="background: #f6d5dc;"></span>
+                            Sakura Mist
+                        </button>
+                        <button type="button" class="theme-pill-btn" data-theme-choice="matcha" data-theme-mode="light">
+                            <span class="theme-swatch-dot" style="background: #cfe3d4;"></span>
+                            Matcha Kyoto
+                        </button>
+                        <button type="button" class="theme-pill-btn" data-theme-choice="nordic" data-theme-mode="light">
+                            <span class="theme-swatch-dot" style="background: #cdddf5;"></span>
+                            Nordic Cloud
+                        </button>
+                        <button type="button" class="theme-pill-btn" data-theme-choice="parchment" data-theme-mode="light">
+                            <span class="theme-swatch-dot" style="background: #e6d5b8;"></span>
+                            Warm Parchment
+                        </button>
+                    </div>
+
+                    <!-- Dark Sub-Themes -->
+                    <div class="subtheme-grid hidden" id="dark-subthemes-grid" role="group" aria-label="Dark sub-themes">
+                        <button type="button" class="theme-pill-btn" data-theme-choice="twilight" data-theme-mode="dark">
+                            <span class="theme-swatch-dot" style="background: #1c223a;"></span>
+                            Velvet Twilight
+                        </button>
+                        <button type="button" class="theme-pill-btn" data-theme-choice="sakura-dark" data-theme-mode="dark">
+                            <span class="theme-swatch-dot" style="background: #3a1f2d;"></span>
+                            Sakura Nocturne
+                        </button>
+                        <button type="button" class="theme-pill-btn" data-theme-choice="matcha-dark" data-theme-mode="dark">
+                            <span class="theme-swatch-dot" style="background: #192e23;"></span>
+                            Matcha Midnight
+                        </button>
+                        <button type="button" class="theme-pill-btn" data-theme-choice="nordic-dark" data-theme-mode="dark">
+                            <span class="theme-swatch-dot" style="background: #182940;"></span>
+                            Nordic Aurora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 3. Reading Comfort & Cozy Mode -->
+                <div class="settings-section">
+                    <span class="settings-section-label">3. Reading Comfort</span>
+                    <button type="button" class="cozy-mode-btn" id="cozy-reading-toggle" aria-pressed="false">
+                        📖 Cozy Reading Mode
+                    </button>
+                    <div class="settings-row-box">
+                        <span style="font-size: 0.95rem; color: var(--text-muted);">Story Text Size</span>
+                        <div class="font-size-controls">
+                            <button type="button" class="font-size-btn" id="font-decrease-btn" aria-label="Decrease text size">A-</button>
+                            <button type="button" class="font-size-btn" id="font-increase-btn" aria-label="Increase text size">A+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ─── Hero Section (Populated Only After Unlock) ─── -->
+        <header class="hero">
+            <div class="hero-heart-top" id="hero-heart-top"></div>
+            <h1 class="hero-title" id="hero-title"></h1>
+            <div class="hero-divider">
+                <div class="hero-divider-line"></div>
+                <span class="hero-divider-heart" id="hero-divider-heart"></span>
+                <div class="hero-divider-line"></div>
+            </div>
+            <p class="hero-subtitle" id="hero-subtitle"></p>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="hero-stat-number" id="total-stories">0</span>
+                    <span class="hero-stat-label" id="stat-label-stories"></span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">∞</span>
+                    <span class="hero-stat-label" id="stat-label-memories"></span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" id="stat-icon-forever"></span>
+                    <span class="hero-stat-label" id="stat-label-forever"></span>
+                </div>
+            </div>
+            <div class="scroll-hint" id="scroll-hint-trigger">
+                <span>Scroll to read</span>
+                <span class="scroll-hint-arrow">↓</span>
+            </div>
+        </header>
+
+        <!-- ─── Stories Section ─── -->
+        <section class="stories-section" id="stories-section">
+            <div class="stories-section-header">
+                <h2 id="chapters-heading"></h2>
+                <p id="chapters-subheading"></p>
+            </div>
+            <div class="timeline-line"></div>
+            <div id="stories-container">
+                <!-- Story cards will be injected here by JavaScript after unlock -->
+            </div>
+        </section>
+
+        <!-- ─── Footer ─── -->
+        <footer class="footer">
+            <span class="footer-heart" id="footer-heart"></span>
+            <p class="footer-text" id="footer-text"></p>
+            <p class="footer-subtext" id="footer-subtext"></p>
+        </footer>
+
+        <!-- ─── Soothing, Smooth & Cute Bottom Reading Progress Bar ─── -->
+        <div class="reading-progress-dock" id="reading-progress-dock" role="region" aria-label="Reading progress">
+            <span class="reading-cute-icon" id="reading-cute-icon" aria-hidden="true">✿</span>
+            <span class="reading-chapter-status" id="reading-chapter-status">Chapter 01 of 15</span>
+            <div class="reading-bar-track" aria-hidden="true">
+                <div class="reading-bar-fill" id="reading-bar-fill"></div>
+            </div>
+            <span class="reading-pct-badge" id="reading-pct-badge">0% read</span>
+        </div>
+        <div class="reading-progress-ribbon" aria-hidden="true">
+            <div class="reading-ribbon-fill" id="reading-ribbon-fill"></div>
+        </div>
+
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         📚  DECOY STUDY PORTAL (UNLOCKED WHEN PASSWORD "0000" IS ENTERED)
+         ═══════════════════════════════════════════════════════════════ -->
+    <div class="decoy-study-portal" id="decoy-study-portal" aria-hidden="true">
+        <nav class="decoy-top-nav" aria-label="Study Portal Navigation">
+            <div class="decoy-brand">
+                <span class="decoy-badge">NCERT Class XI</span>
+                <span class="decoy-brand-title">PCMB Formula &amp; Short Notes Vault</span>
+            </div>
+            <div class="decoy-nav-actions">
+                <input type="search" id="decoy-search-input" class="decoy-search-input" placeholder="Search chapter or formula…" aria-label="Search NCERT notes">
+                <button type="button" id="decoy-lock-btn" class="decoy-lock-btn">Lock Session</button>
+            </div>
+        </nav>
+
+        <main class="decoy-container">
+            <div class="decoy-hero-banner">
+                <h1>Class 11 NCERT Complete Revision Sheet (PCMB)</h1>
+                <p>Consolidated Mathematics Formulas, Physics Derivations &amp; Formulas, Chemistry Short Notes, and Biology Key Points for CBSE &amp; Competitive Revision.</p>
+                <div style="display: flex; gap: 1.25rem; flex-wrap: wrap; font-size: 0.84rem; color: #cbd5e1;">
+                    <span>📐 <strong>Maths:</strong> Sets, Trig, Calculus, PnC, Conics</span>
+                    <span>⚡ <strong>Physics:</strong> Kinematics, NLM, WEP, Rotation, Thermo, SHM</span>
+                    <span>🧪 <strong>Chemistry:</strong> Mole, Atomic, Bonding, Thermo, Equilibrium, GOC</span>
+                    <span>🧬 <strong>Biology:</strong> Taxonomy, Cell Cycle, Plant &amp; Human Physiology</span>
+                </div>
+            </div>
+
+            <div class="decoy-tabs" role="tablist" aria-label="Filter by Subject">
+                <button type="button" class="decoy-tab-btn active" data-decoy-subject="all">All Subjects (16 Modules)</button>
+                <button type="button" class="decoy-tab-btn" data-decoy-subject="maths">📐 Maths Formulas</button>
+                <button type="button" class="decoy-tab-btn" data-decoy-subject="physics">⚡ Physics Formulas</button>
+                <button type="button" class="decoy-tab-btn" data-decoy-subject="chemistry">🧪 Chemistry Short Notes</button>
+                <button type="button" class="decoy-tab-btn" data-decoy-subject="biology">🧬 Biology Short Notes</button>
+            </div>
+
+            <div class="decoy-grid" id="decoy-notes-grid"></div>
+        </main>
+    </div>
+
+    <!-- ─── Lightbox for Viewing Inline Story Images ─── -->
+    <div id="image-lightbox" role="dialog" aria-modal="true" aria-label="Enlarged photo">
+        <button type="button" id="image-lightbox-close" aria-label="Close photo">Close ✕</button>
+        <img id="image-lightbox-img" src="" alt="">
+        <p id="image-lightbox-caption"></p>
+    </div>
+
+    <!-- ─── Security Notice Toast & Active DevTools Shield ─── -->
+    <div id="security-toast" role="status" aria-live="polite">
+        🔒 Protected Portal · Code inspection & developer tools are disabled
+    </div>
+    <div id="devtools-shield" role="alert" aria-live="assertive">
+        <div style="font-size: 2.2rem; margin-bottom: 0.75rem; color: #b07d52;">◈</div>
+        <h2>Security Lockdown Active</h2>
+        <p>Developer tools and code inspection are strictly disabled on this portal. Please close the inspector to continue.</p>
+    </div>
+
+    <!-- ─── Back to Top Button ─── -->
+    <button id="back-to-top" aria-label="Back to top">↑</button>
+
+    <!-- ─── Floating Hearts Container ─── -->
+    <div id="floating-hearts-container"></div>
+
+    <script id="sanctuary-core-script">
+    (function() {
+        'use strict';
+        // Immediately erase this <script> node from the live DOM so code cannot be read via Elements tree
+        const selfScriptNode = document.getElementById('sanctuary-core-script');
+        if (selfScriptNode && selfScriptNode.parentNode) {
+            selfScriptNode.parentNode.removeChild(selfScriptNode);
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           ✏️  EDIT YOUR PASSWORD & STORIES HERE (STEP-BY-STEP GUIDE)
+           ═══════════════════════════════════════════════════════════════
+        
+           1️⃣ HOW TO CHANGE YOUR PASSWORD (ALPHANUMERIC OR SYMBOLS):
+              Look right below at `const YOUR_PASSWORD = "...";`
+              Put any letters and numbers (e.g. "Pragya2026" or "ViratPragya17")
+              inside the quotation marks "".
+        
+           2️⃣ HOW TO ADD A NEW JOURNAL ENTRY:
+              Scroll down to `const loveStories = [`
+              Copy one block starting from `{` to `},` and paste it before `];`
+              Change `date`, `title`, and `content`.
+        
+           3️⃣ HOW TO ADD IMAGES OR AUDIO IN BETWEEN YOUR TEXT IN THE SAME CARD:
+              Anywhere inside the backticks ` ` of `content`, write:
+              
+              • For an Image right between paragraphs:
+                [IMAGE: my-photo.jpg]
+                or with a caption:
+                [IMAGE: my-photo.jpg | First time I saw her at the exam centre]
+              
+              • For Music or a Voice Note right between paragraphs:
+                [AUDIO: my-song.mp3]
+                or with a title:
+                [AUDIO: my-song.mp3 | The song that reminds me of this moment]
+        
+           ================================================================ */
+
+        // ─── CONFIGURATION (change these!) ───
+        const YOUR_PASSWORD = "1234"; // ← REAL PASSWORD: Opens your private journal
+        const DECOY_PASSWORD = "0000"; // ← DECOY PASSWORD: Opens Class 11 NCERT PCMB Study Notes
+        const HERO_TITLE = "Moments I Never Want to Forget"; // ← CHANGE THIS to your title
+        const HERO_SUBTITLE = "Every moment with you is worth remembering"; // ← CHANGE THIS
+        const FOOTER_TEXT = "To be continued… forever and always"; // ← CHANGE THIS
+
+        // ─── YOUR STORY ENTRIES (add/edit below) ───
+        const loveStories = [{
+            date: "17 February, 2026",
+            title: "1st Board Exam",
+            content: `ALL THANKS TO THOSE MISCHIEVOUS CLASSMATES OF MINE, WHO MADE IT POSSIBLE FOR ME TO ARRIVE AND LEAVE THE EXAM CENTRE ON MY OWN AND NOT FROM ANY SCHOOL BUS!
+My class 10th boards had started. I was genuinely clueless that at the time when all students stress for exams, my stress would be for anything else. 
+
+17th Feb, My first exam was maths, we arrived from bus,  nothing special. I gave exam, Exam took mine 💀. 
+`,
+        }, {
+            date: "21 February, 2026",
+            title: "Pahli Nazar 🧿",
+            content: `21st Feb, Second exam, English. Same bus took us to exam centre again, but this time, when i was chilling out with my friends outside the centre, suddenly I saw a face. A familiar Face, I took some time to process,andddddd itwas my old classmate and only female bestfriend of my life (class 3rd and 4th). She also saw me, Meri fatt gyi. Female interaction for me is just impossible. The last girl I ever talked to, was her ❤️. I withdrew my eyes out of nervousness without waving a "Hi". Now, my eyes started looking for her everywhere. I dont fucking know what I was feeling, and what was happening to me suddenly but yeah! We went inside the examination centre. My eyes just glued to her. She was sitting with her friends at the other side (Girls Section), and I sat in the boys section. She was also looking at me from a distance. Maybe we were understanding what was going on inside ourselves at that time, because this was an unexpected meet after roughly 6 to 7 years of absolutely no contact. Then everything went normal, we wrote our papers and came back home. But I did not know that this simple thing will go such far. I knew she will treat me like a random guy, I was no special.I literally did not expected what was going to happen next day.
+`,
+        }, {
+            date: "25 February, 2026",
+            title: "First Impression",
+            content: `25th February, Third Exam (Science), My school management said that due to the intolerable activities of some students, the bus will only take those students to exam centre who pay for it (old customers lol). If this would not have been happened, my life would have taken a completely different turn. Honestly I had forgot about her, after all she had not shown any interest in me that day. I saw her, she was probably discussing something with her friends about today's exam (ofc). We again wrote our exams and nothing much happened except those "Noticing Each Other" types. Paper dene ke baad me exam centre se nikla, aur apne doston ke saath jaane laga, wo mere aage aage chal rahi thi (coincidentally). I had observing her from the very back when we were walking, she was definitely looking for someone. When I reached closer to her she saw me and then immediately turned forward, she started telling her friends and pointed towards me with her eyes. I know something happened at that time. She did this THRICE. Par mujhe yakeen tha ki: Koi tumse pyaar kyu karega? So, I just did what I used to do. Just went to the other side with my frnds and she took the other way. Maybe she waited for me because she started feeling for me first ✨ But jab tak mai aaya wo chali gayi thi as I was busy with some of my Motherfucker Friends. 
+`,
+        }, {
+            date: "27 February, 2026",
+            title: "Initial Efforts",
+            content: `27th February: My fourth Exam (IT). I reached the centre, saw her sitting with her friends in the ground at the other side (girls area). She was staring at me. I stared at her. We wrote our papers, left the centre. Again that staring session started. In the last paper, nothing serious had happened. Although it was *EXTREMELY ABNORMAL* for me, no girl had ever looked at me that way, or did any if the things that she did. But wo mud mud kar dekhti rahi. I was dead serious, no expressions at all (cuz mujhe pta hi nahi tha kya karu). At the trisection, she continued walking towards the left road (ghar ki taraf ka rasta) while i headed towards my friends (right side). I thought it was nothing as serious. But she waited, which i did not expect. Mai bakchodi karke waha se nikla, and saw her standing there and talking with her friends. I told gaywa (he knew less initially but i told him more and more about her with time). Mujhe dekhte hi wo chalne lagi aage aage. I was literally confused, I could not believe my eyes. Bhai ye achanak se kya ho raha haiiii!!?!?, aur jo wo baar baar tirchhi nazar se mudkar dekh rahi thi wo to .... 💀💀💀💀💀. I did not have the courage to look towards her, it was gaywa who kept telling me when she turned to look for me. My condition was getting critical asf. Little did I realised that she had started to like me. Fir mai tez tez chalkar uske bagal tak pahuncha aur fir usse aage nikal gaya. I halted at a shop to buy some snacks, us dukaan se khade hokar use dekhne laga. I thought she would come this was but she took the other way, at the santoshi mata temple, with her friends and went home by an e rickshaw. AB suno: mai gaywa ke saath rickshaw me baith gaya, mai uske baare me hi soch raha tha, then suddenly I saw her going inside the street just besides the MLK PG college's main gate. I obviously recognised her from the back.She still thinks that i live at the "CITY PALACE HOUSE", yaani meri nani ka ghar. Thats why she was going there warna uske ghar ka to waha koi ata pata nahi tha. she lived in sisai. Also, gaywa was confused ki mai konsi ladki ke baare me baat kar raha hu he thought uske saath jo ladki chal rahi hai wohi hai meri wali. Usne bataya mai jaanta hu "Rashi" ko. I said Rashi?? Who Is she?? Mujhe laga uske ghar ka naam Rashi hoga. Gaywa ne bataya uske papa army me the aur death ho gyi. BC mujhe laga shaadi se pahle mera sasur nipat gaya 😭. (Btw salute to him). Par baad me agle din pata chala it was not her. I was Relieved. 
+`,
+        }, {
+            date: "2 March, 2026",
+            title: "Expression Of Love",
+            content: `2nd March (Fifth Examination): Aaj mera hindi ki exam tha. Speaking honestly,I was not worried a bit about my exams. my true anxiety was something else 🫪.All I though of was her.She left a lasting impression on me. When I arrived at the centre, I roamed around with Gaywa (main goal: finding her!), but last me pata hai kya hua!! Mere saamne ek Maruti Suzuki Swift Dzire (discontinued model 2017 - 2020) Grey color- UP32------- ( I was unable to see the whole registration plate) aakar rukti hai. She sat quietly inside her car and watched me while I lost consciousness lol. Paper ka time hua tab ham andar gaye. We assembled for the prayer (her school line was separate) although we saw each other. Paper achha hua, bahar aane ke baad. Mere dimaag completely confused tha, pata nhi wo sirf curious hai ya sach me pasand karti hai or she is just makung fun out of me with her friend. Mujhe to sach me yahi lagta tha ki mai lifetime single rahne ke liye hi bana hu. I leaved the centre thinking all of this. Baaki madarchodon (doston) ko peeche chhodte hue, gaywa ke saath aage aaya. Mai bahut zyada, LITERALLY BAHUT ZAYADA RESTLESS THA. I was just looking Out for her. I scanned all possible pathways. I even returned 2 times to see if she was behind but she was nowhere to be found. Jab wo kahi nahi mili,i had no words."SHE WAS JUST MAKING FUN OF ME AND I FUCKING FELL FOR IT, IT WAS NOTHING AS SERIOUS AS I THOUGHT",Gaywa constantly reassured me that she will be somewhere wating for me, and then........... as i walked further . ............ at the turn, badi wali pani tanki ke neeche, She was waiting. She did not go away. I WAS FILLED WITH JOY. Bhai ab sach me thoda thoda lagne laga tha ki kuchh ho raha hai pakka. Mai uske bagal se nikla, my heartbeat skyrocketed cuz jaise hi mai aage nikla she started walking behind me again, like she was literally waiting for me!!. atp I literally thought someone injected a super serum into my brain, My brain started analyzing all 14 million possibilities in all multiverses. I could not believe in my own existence 🤯🤯🤯🤯. We walked for some distance and i stopped again at the same shop as the last time, expecting that she will go the same way as prevoius but, she didn't. She took the other path. sirf ek dost ke saath usi raste per paidal hi chalne lagi jis raste Se Main bhi jane wala tha.I bought soft drinks and began to walk behind her. (I could not convince my brain that it was happening to me lol). Jaisi Meri nazar uspar pdti hai, Maine dekha ki wo peeche mujhe hi dhoondh rahi thi. Mai peeche chal raha tha. I kept walikg past her, aur wo repeatedly mud mud kar dekh rhi thi. Jitni baar wo mudti utni baar my heart skipped a beat FR. Gaywa lagtaar kah raha tha bhai kuchh karo bhai kuchh karo bhai--- kuchh karo lekin aaj bhi is baat ka regret hai yaar. Mai chutiya tha ekdam. Ek baar dekh kar dhang se smile bhi nahi de paya. Chalte chalte fir she took a rickshaw at veer vinay chowk. Waha par 10000% confirmation ho gya. When she sat in the auto, she peeked behind and gave me a long stare. Peeche coincidence maan sakta hoon but last wala was deadly for sure. 
+YOU EXPRESSED YOUR LOVE THROUGH YOUR EYES THAT DAY`,
+        }, {
+            date: "7 March, 2026",
+            title: "Closest Approach",
+            content: `7 March (Last Exam): Aaj ke din dil me extreme level ka dar, excitement, fomo sab tha. Aaj last day tha, agar aaj kuchh nahi kiya to lifetime regret hona tha. Centre par pahucha and wo thoda late se aayi. Ham school ke gate ke just baahr khade the. Mai  Apne friends circle main khada tha vah apne friend circle mein khadi Thi. Then we locked in the hardest eye contact of our lives. Fir paper wagerah hone ke baad bahar nikle. And what happened was totally unexpected. I could not find her anywhere. Mai baar baar reverse aaya check karne, dobara aage gaya pani tanki pe ki shayad waha mil jaye par nahi mili. My soul was once again filled with sadness. Bahut bura laga. Gaywa wahi kahta raha ruk mai dhundhta hu etc etc. I kept walking with my eyes facing downwards. Gaywa suddenly shouted: WO HAIIIIIIIIIIIIIII. Then I saw her waiting at a shop at the road intersection at Highway. Same thing happened today too, saath saath chalte chalte ham, kabhi wo aage kabhi mai aage. After gaywa filled me with some courage I also began to turn back and lookout for her just for her to be assured that I am aware of what is going on. Fir ham vv chowrahe tak pahuche. Then it hit me, ki kahi wo firse chali na jaye, so I instantly ran and crossed the road to signal her to come forward. Thank god, wo waha par ruki thi auto ke liye, but mujhe aage jaate hue dekh kar wo bhi mere piche piche aane lagi. When she was crossing, she was facing difficulties I noticed, I thought I should help but my introvert ass froze my body. Aage ham jab Ambedkar tirahe par pahuche, to mujhe laga - ki kahin wo ye Na soche ki Main andar jaunga, kyunki Mera Ghar City palace per hai. and maybe she would go there, but main Sahi time par usse aage nikal gaya.  and thennnn......., we walked all the way from st. Xaviers to mlk college. Approx 5kms and that too on our foots.It felt nothing walking 5kms 🙃. I tried so many times to talk but i couldnt. Now we reached mlk pg college. I am a person who fears about these things a lot, so to just get a final assurance i decided to take a final test to get  1,000,000% confirmation (I was a coward asf), I crossed the road and went to a nearby shop. Mere road cross karte hu wo bhi road ke ussi side aa gyi, but she went for the other shop. Gaywa fueled me up - "Go get me chewing gums". I asked for all the strength that mightly lords could offer. I went to the shop at which she was standing. Mai uske just peeche khada tha. She wore a beautiful perfume that day. She did not notice my presence until I asked the shopkeeper for cf. Then, suddenly out of excitement she held her frnd's hand tightly and maybe started to jump. She was excited asf. Mai confirm to ho gaya but ab karu kya. then came someone on a bike and asked her to hop on and he'll drop her home. she refused. Like literally! Mai to bada khush hua, lekin fir 2 min baad rickshaw me baith kar chali gayi. The only words I could say was "Laude Lag Gaye" twice. I was broken completely. Went home. Uske baad mai use bhool nhi paya
+`,
+        },{
+            date: "Post Exam Condition🤒",
+            title: "Secretly Depressed",
+            content: `After 7th of March there wasn't a day when i didn't think of her.Whenever i went out, i just hoped for a girl who wore specs and had a beautiful natural blush on her cheeks! Pahle sochta tha ki balrampur kitna hi bada hai, mil hi jayegi kahi na kahi.But there was no track of her for months. I was dying out of restlessness.One day Gaywa told me that he saw her in the bijlipur temple, but I Assumed it was largely fake. There was one last hope.... Second board ka jab form bhara tha ❤️. Is bar Main kafi himmat juta chuka tha ki is bar opportunity miss nahin hone dunga. I was waiting For 15th May. Bahut sare doubts the dimag mein, sab kuchh clear Ho Gaya examination ke din. 
+`,
+        },{
+            date: "15 May, 2026",
+            title: "The Second Chance",
+            content: `15 May: First 2nd board exam (Maths). Main usi purane centre pahuncha, nostalgia peaked there. Maine pahle Se Hi gaywa ko bol Rakha tha, ki jaldi a Jana aur mere sath rahana pure time. But he was a pure asshole, he came late and went away earlier (He should never be forgiven for this sin!). Yani ki Main akele lauta. anyway,I was roaming around, meeting my old classmates. Then gaywa arrived.I kept waiting dor too long,but she was nowhere to be found. Mujhe yakin ho gaya tha ki I could not do anything except regret all my life. But Achanak se us bheed mein, I saw a face. It was HER..... ❤️. I was excited asf. I mustered up all the courage. Slowly penetrating the intense traffic, she came near and stood infront of me. Ham center ke andar ghuse, exam Diya aur fir bahar aa gaye. Jab mai bahar nikla to wo bhi apni classroom ke bahar khadi hui thi, mujhe dekhte hi aage badh gayi. We followed as always. But uske baad wo apni friends ke saath rickshaw me baith kar chali gayi. Like literally, no eye-contact nothing. She just sat and went away like it was nothing. I was deeply saddened, I knew I have no more than few minutes in total, over 2 fucking days. Usme se bhi wo pahle din chali gayi. I went zombie for few minutes, i could not speak, could not think, and could not feel anything (except the extreme sunlight lol) Gaywa had already gone with his father, I was walking towards home with Aditya. He was accompanying me in the opposite direction, he had to go the other way. I walked some distance with him so that he does not feel bad. And then I haulted rickshaw for him, and he went away too. I walked for a while but then I too took a rickshaw. Now.... As i reached the same spot at the MLK College, I saw both of them there. They had stepped off, and stopped there. This implies that, she didn't ditch me. Maybe she was obliged or something? Okay, back to the moment: as soon as she saw me, she started to laugh loudly pointing towards me and I was confused asf. Maybe she was making fun of me and teasing me idk. Pahle maine socha ki utar ke baat kar lu isi bahane ki has kyu rahi ho lekin fir bhi himmat nahi juta paya. (I can fuck a dozen boys alone in the bus stand, but cant talk to a girl.... WTF???). I did not stop there but stepped of the auto just before the colony.I thought I should wait, maybe she will speak first.But she already took an auto. She saw me and tried to stop at a distance but then went away. I again dk what happened. 
+`,
+        }, {
+            date: "17 May, 2026",
+            title: "Betrayal",
+            content: `17 May: Science Exam (2nd Board). Today, She was not outside the centre, nornat the ground.Nor at the staircase. I thought that's it! But she herself was finding me infront of my classroom.She went after seeing me. Exam ✅, pel ke cheating karwaya puri class ko ☠️. Classroom se bahar nikla hi tha ki wo staircase ke paas khadi hui thi. Then we locked in 2nd longest eye contact of our lives. This time from a much closer distance, we both expected each other to soeak first but none of us did. She gave a beautiful smile then.Finally, walking forward with my friends discussing the paper I dropped my Aadhar Card. Fortunately wo hi mere peeche chal rahi thi. She called me -"Virat! Aadhar Card!!" Bas, I thought ki bc kya ho gaya!!! I took it from her, and could not even say thankyou, I mean what kind of a guy I was man?. Matlab ekdam bsdw hi tha kya mai.  Us din bhi gaywa jaldi chala gaya. Wo mere saath chalti to rahi kaafi door tak. We again walked all the way from St Xavier's to MLK. Her cheeks turned red due to the heat.It was so hot that day, that her speed slowed down at the end . At mlk, i looked back and she was not there.I stood there for a few minutes waiting for her, maybe she was walking slow, then saw her going home with a rickshaw! Well Played ❤️‍🩹. Auto aage badha aur wo apna mu chhupa kar chali gayi. I was cold inside.My heart showed no remorse. "KHEL KHATAM BETA🥀`,
+        },{
+            date: "Random Day",
+            title: "New Hope",
+            content: `5:12PM, random day on july. Mai market jaa raha tha, amdmbedkar tirahe se andar ghusa aur achanak se ekdam door se, EKDAM DOOR SE. Bheed me....................... wo dikh gayi. Mai speed me tha, mera haath aur pair sunn ho gaya. Ek nazar me ek second me pahchan liya maine use. Mai fir scooter ghuma kar ek baar aur gaya to confirm is she was it. And yessss sir! 
+Bhaisab, in an instant i pulled my phone out and took a screenshot of current time. Told gaywa about this. Now imagine, a girl living in sisai, takes admission in a tuition 5kms away from her home. Only for me (my old home). I was moved by her determination. I could never imagine doing any of that, which she did. Mai fir ek aur chakkar marne gaya, this time she saw me but I noticed something unusual all the 3 times when i Saw her. Meri wali always walked on her left side, aur uske right me uski mc dost. But uske peeche peeche ek ladka bhi chal raha tha. Quite close to her. Pahle nazar me laga aise hi jaa raha hoga. Fir second time jab maine use dekha tab wo road cross karke momos khane "Ved Momos" par jaa rahi thi. Uske saath wo bkl bhu road cross karne laga. Aur fir, 3rd time. Wo bkl meri wali, uski dost (abse shortcut me mc bolenge usko: Reason: She should've motivated her to speak first or she could have applied some efforts from her side to help meri wali. + She acted as a resistance wall between us. Aise dost dost kahlane ke layak nhi hote for sure) ek saath momos kha rahe tge and he was paying. There were 2 possibilities, ki wo either one of the girls ka bf tha. Now because he always stood, and walked near "meri wali" i thought ki ye uska bf hai and I was clearly doomed. Mai gusse se samaan lekar ghar chala aaya. Gaywa ko bataya, he also said ki haan maine bhi use ek ladke ke saath mandir me dekha tha which i again assume was largely fake 🤥. Mai baar baar bata raha hu, apni feelings ko express kar pana bahut mushkil hai. To jab bhi ye padhna pause le lekar padhna aur yaad karte rahna. 
+`,
+        },{
+            date: "Thoughts Afterwards",
+            title: "Result Of Overthinking",
+            content: `Ab mujhe lagne laga ki wo Dynamic Coaching me padhti hai kyuki whi mere purane ghar ke sabse paas me hai. I decided ki mai jab bhi jaunga 4:50 par niklunga aur 5:00 tak pahunch jaunga. Then I'll get to see her. 
+`,
+        },{
+            date: "Somedays Afterwards",
+            title: "Grace Of God",
+            content: `Mai almost roz kisi na kisi bahane se jaane laga. Kabhi kabhi to gaywa ko bhi bula leta tha. Kai din tak lagataar jaata raha. To wo nhi milti thi
+
+Ek din gaywa ko bulaya aur ek aur try mara, is baar surya public school ke aage same time par jaate hue dikhi. Maine use almost 100m door se hi dekhliya. Uske paad jakar speed dheemu kari, fir usne mujhe dekhkar aisi smile di ki meri haalat bilkul srk ke is meme ki tarah ho gayi 👇
+
+https://share.google/iQpbugQf2LiLitYjJ
+
+(Dil pe haath)
+
+Fir mai ghoom kar wapis aaya, wo bkl fir se dikh gaya. Pure dimaag ka bhang bhosada ho gaya. Mai gaywa ko bataya use bhi laga ki haan meri wali ka hi bf hai. To firse mai wapis chala aaya.
+
+Yaha ek baat notice karo, gussa hone ke bawajood mai ek bhi din mauka nahi chhodta tha 5 baje jaane ka.And yeah i know i should have remembered those dates. But I couldn't.
+
+Uske baad ek din fir se mai gaywa ke saath jaata hu. Mai andar jaate gaya aur wo nahi dikhi, fir achanak se mere Bagal se auto riksha nikla, jiske andar mujhe aisa Aisa hua ki wo baithi hai. Par Maine itna Dhyan nahin diya aur Main aage chalta Gaya. Jab wo nahin dikhi, tumhen socha ki yah market se Saman lekar wapas chalte Hain, par gaywa bola ki ek round aur. Fir jaise hi me dobara ved momos par pahuchta hu waha mujhe peeche se ek green bag dikha. Mai aage jakar ek dukaan par ruk gaya aur waha kuchh samaan lene ruk gaya ye sochkar ki wo aayegi tab baat ho jayegi. But wo nahi aayi. Aur vo bkl mehra bhi bahut raha tha, maine gaywa se kaha ki tum confirm karogi yah bkl Hai kiska. Usne video vagaira Banakar yah confirm kar diya ki vo bkl Mc ka tha. Also gaywa ne bataya ki jab wo waha tha tab meri wali already jaa chuki thi, most probably mujhe market ki taraf jaate dekh kar wo bhi chali aayi ho mere liye bcoz jab wo bkl aur mc auto me baithe to unhone kaafi der tak wait kiya uska. But I didnt wait. Clearly My fault. 
+`,
+        },{
+            date: "Next Incident",
+            title: "Ved Momos",
+            content: `Is baar to mai seedhe uske bagal me hi ghus gaya. Wo momos kha rahi thi, maine khane ki bajay pack karne ko bola ghar ke liye. Wo mujhe mc ke peeche se chup chup kar dekh rahi thi. Maine bhi dekhna chaha but wo chhup rahi thi. Kuchh ho nahi paya us din bhi. 🙆
+`,
+        },{
+            date: "29 August, 2026",
+            title: "Tried My Best 🫣",
+            content: `Today when i am writing this: 29th August 2026. Aaj Gaywa ka wifi wala kaand hua. Use sort karke mai nikla ek aur try maarne. Aur is baar surya ke age SBI atm ke paas dikhi. Usne mujhe dekha but maine is baar ignore kar diya. Kyuki us bkl se mujhe chidh hai. Gaywa roz bolta hai chalo use pel diya jaye😂. Fir mai bade pul ke andar se ghoom kar nikla, but is baar wo jaane ke mood me nahi thi. BHAIIIIIII WO AAJ KASAM SE JAANE KE MOOD ME NAHI THI BINA BAAT KIYE. ek baar aage gayi, fir laut ke wapis aayi aur surya ke bahar hi khadi ho gayi. Mai ek chakkar gaya- Eye contact successful ✅. Dusre chakkar, opposite side se lagaya to kuchh khaas nahi. 3rd round---> She was clearly upset with me. Aaj pahli baar itne gaur se dekh paya. Bahut pyari lag rahi thi tum.  Fir papa ka phone aa gaya ☠️💀☠️💀☠️💀. Papa ke dar se scooter side me lagakar phone uthaya aur baat kiya, aaj vipassana khatam hone wala tha. Fir maine notice kiya ki hadbadi me chaabi mere haath ne thi, but scooter fir bhi start tha. Are bc 🤣😭.  Aaj laga ki shayad wo apna maan chuki hai mujhe. Mai is baar gaya to waha nahi thi. Fir mai pure highway par, rapti tak har ek auto ko dekhte hue gaya ki shyd kisi me mil jaye. Par naa. Waapsi me bhi nahi. Aaj bahut zyada dukh ho raha hai. Aisa kab tak chalega. Ab mai to roz roz nhi aa paunga na yr. Kaafi upset hu ye likhte hue. Keep notes ki limit khatam hui to socha ek website bana du iske liye. Hamesha ke liye yaad rahega. ❤️`,
+        },{
+            date: "January 15, 2024",
+            title: "The First Hello",
+            content: `TEXT`,
+        },
+    
+    ];
+
+        // ─── ─── ─── ─── ─── ─── ─── ─── ─── ─── ─── ─── ─── ─── ───
+        //  ✏️ END OF STORY EDITING — DON'T CHANGE ANYTHING BELOW THIS LINE
+        // ─── ─── ─── ─── ─── ─── ─── ─── ─── ─── ─── ─── ─── ─── ───
+
+        /* ═══════════════════════════════════════════════════════════════
+           ⚙️  JAVASCRIPT — ALL THE MAGIC HAPPENS HERE
+           ═══════════════════════════════════════════════════════════════ */
+
+        // ─── DOM Elements ───
+        const sanctuaryLoader = document.getElementById('sanctuary-loader');
+        const loaderCenterIcon = document.getElementById('loader-center-icon');
+        const loaderTitleEl = document.getElementById('loader-title');
+        const loaderStatusEl = document.getElementById('loader-status');
+        const loaderProgressBar = document.getElementById('loader-progress-bar');
+
+        const passwordOverlay = document.getElementById('password-overlay');
+        const passwordInput = document.getElementById('password-input');
+        const passwordToggleEye = document.getElementById('password-toggle-eye');
+        const passwordSubmit = document.getElementById('password-submit');
+        const passwordError = document.getElementById('password-error');
+
+        const mainContent = document.getElementById('main-content');
+        const storiesContainer = document.getElementById('stories-container');
+        const totalStoriesEl = document.getElementById('total-stories');
+        const backToTopBtn = document.getElementById('back-to-top');
+        const heroTitleEl = document.getElementById('hero-title');
+        const heroSubtitleEl = document.getElementById('hero-subtitle');
+        const footerTextEl = document.getElementById('footer-text');
+        const scrollHintTrigger = document.getElementById('scroll-hint-trigger');
+
+        const readingCuteIcon = document.getElementById('reading-cute-icon');
+        const readingChapterStatus = document.getElementById('reading-chapter-status');
+        const readingBarFill = document.getElementById('reading-bar-fill');
+        const readingPctBadge = document.getElementById('reading-pct-badge');
+        const readingRibbonFill = document.getElementById('reading-ribbon-fill');
+
+        const themeButtons = document.querySelectorAll('.theme-pill-btn');
+        const cozyReadingToggle = document.getElementById('cozy-reading-toggle');
+        const fontDecreaseBtn = document.getElementById('font-decrease-btn');
+        const fontIncreaseBtn = document.getElementById('font-increase-btn');
+
+        const imageLightbox = document.getElementById('image-lightbox');
+        const imageLightboxImg = document.getElementById('image-lightbox-img');
+        const imageLightboxCaption = document.getElementById('image-lightbox-caption');
+        const imageLightboxClose = document.getElementById('image-lightbox-close');
+        const securityToast = document.getElementById('security-toast');
+
+        // Keep browser title discreet until password is verified
+        document.title = 'Protected Portal';
+
+        // Populate private journal headings ONLY after password unlock
+        function populateProtectedJournalCopy() {
+            document.title = 'Moments I Never Want to Forget ✦ A Private Journal';
+            document.getElementById('hero-heart-top').textContent = '✦ ♥ ✦';
+            heroTitleEl.textContent = HERO_TITLE;
+            document.getElementById('hero-divider-heart').textContent = '♥';
+            heroSubtitleEl.textContent = HERO_SUBTITLE;
+            totalStoriesEl.textContent = loveStories.length;
+            document.getElementById('stat-label-stories').textContent = 'Stories';
+            document.getElementById('stat-label-memories').textContent = 'Memories';
+            document.getElementById('stat-icon-forever').textContent = '♥';
+            document.getElementById('stat-label-forever').textContent = 'Forever';
+            document.getElementById('chapters-heading').textContent = 'Our Chapters';
+            document.getElementById('chapters-subheading').textContent = 'Each one a precious memory I never want to forget';
+            document.getElementById('footer-heart').textContent = '♥';
+            footerTextEl.textContent = FOOTER_TEXT;
+            document.getElementById('footer-subtext').textContent = '✦ Private journal · Made with love ✦';
+        }
+
+        // Prevent body scroll while locked or loading
+        document.body.style.overflow = 'hidden';
+
+        // Check if automated test fast-forward is active
+        const urlParams = new URLSearchParams(window.location.search);
+        const isAutoStart = urlParams.get('autostart') === '1';
+        const isDecoyStart = urlParams.get('decoy') === '1';
+        const LOADER_DURATION_MS = (isAutoStart || isDecoyStart) ? 120 : 2400;
+
+        // ─── Class 11 NCERT Decoy Study Notes Dataset (Maths, Physics, Chemistry, Biology) ───
+        const decoyNcertModules = [
+            {
+                subject: 'maths',
+                subjectLabel: '📐 Maths Formulas',
+                chapter: 'NCERT Ch 1, 2 & 3',
+                title: 'Sets, Relations & Trigonometric Functions',
+                items: [
+                    '<strong>Inclusion-Exclusion:</strong> <code>n(A ∪ B) = n(A) + n(B) − n(A ∩ B)</code>; De Morgan: <code>(A ∪ B)\' = A\' ∩ B\'</code>',
+                    '<strong>Relations & Functions:</strong> If <code>n(A) = p</code> and <code>n(B) = q</code>, total relations <code>= 2^(pq)</code> and total functions <code>= q^p</code>',
+                    '<strong>Compound Angles:</strong> <code>sin(x ± y) = sin x cos y ± cos x sin y</code>; <code>cos(x ± y) = cos x cos y ∓ sin x sin y</code>',
+                    '<strong>Double & Triple Angles:</strong> <code>cos 2x = cos²x − sin²x = 2cos²x − 1 = 1 − 2sin²x</code>; <code>sin 3x = 3sin x − 4sin³x</code>',
+                    '<strong>Sum-to-Product:</strong> <code>sin C + sin D = 2 sin((C+D)/2) cos((C−D)/2)</code>; <code>cos C − cos D = −2 sin((C+D)/2) sin((C−D)/2)</code>'
+                ]
+            },
+            {
+                subject: 'maths',
+                subjectLabel: '📐 Maths Formulas',
+                chapter: 'NCERT Ch 4, 6 & 7',
+                title: 'Complex Numbers, Permutations, Combinations & Binomial',
+                items: [
+                    '<strong>Modulus & Conjugate:</strong> For <code>z = a + ib</code>, <code>|z| = √(a² + b²)</code>, <code>z̄ = a − ib</code>, and <code>z · z̄ = |z|²</code>',
+                    '<strong>Polar Form & Euler Identity:</strong> <code>z = r(cos θ + i sin θ) = r e^(iθ)</code> where <code>tan α = |b / a|</code>',
+                    '<strong>Permutations & Combinations:</strong> <code>nPr = n! / (n − r)!</code>; <code>nCr = n! / [r!(n − r)!]</code>; Property: <code>nCr + nC(r−1) = (n+1)Cr</code>',
+                    '<strong>Binomial Expansion:</strong> <code>(a + b)^n = Σ (nCr) a^(n−r) b^r</code>; General Term <code>T_(r+1) = (nCr) a^(n−r) b^r</code>'
+                ]
+            },
+            {
+                subject: 'maths',
+                subjectLabel: '📐 Maths Formulas',
+                chapter: 'NCERT Ch 8, 9 & 10',
+                title: 'Sequences & Series, Straight Lines & Conic Sections',
+                items: [
+                    '<strong>Geometric Progression (GP):</strong> <code>T_n = a · r^(n−1)</code>; Sum <code>S_n = a(r^n − 1) / (r − 1)</code>; Infinite GP <code>S_∞ = a / (1 − r)</code> for <code>|r| < 1</code>',
+                    '<strong>AM-GM Inequality:</strong> For positive numbers <code>a, b</code>: <code>AM = (a+b)/2 ≥ GM = √(ab)</code>',
+                    '<strong>Distance of Point from Line:</strong> Perpendicular distance of <code>(x₁, y₁)</code> from <code>Ax + By + C = 0</code> is <code>d = |Ax₁ + By₁ + C| / √(A² + B²)</code>',
+                    '<strong>Standard Conics:</strong> Parabola <code>y² = 4ax</code> (Focus <code>(a,0)</code>); Ellipse <code>x²/a² + y²/b² = 1</code> with <code>b² = a²(1 − e²)</code>; Hyperbola <code>b² = a²(e² − 1)</code>'
+                ]
+            },
+            {
+                subject: 'maths',
+                subjectLabel: '📐 Maths Formulas',
+                chapter: 'NCERT Ch 12 & 13',
+                title: 'Limits, Derivatives & Statistics Formulas',
+                items: [
+                    '<strong>Standard Limits:</strong> <code>lim(x→0) [sin x / x] = 1</code>; <code>lim(x→0) [(e^x − 1) / x] = 1</code>; <code>lim(x→a) [(x^n − a^n)/(x − a)] = n·a^(n−1)</code>',
+                    '<strong>Differentiation Rules:</strong> Product Rule <code>(uv)\' = u\'v + uv\'</code>; Quotient Rule <code>(u/v)\' = (u\'v − uv\') / v²</code>',
+                    '<strong>Standard Derivatives:</strong> <code>d/dx(x^n) = nx^(n−1)</code>; <code>d/dx(sin x) = cos x</code>; <code>d/dx(tan x) = sec²x</code>; <code>d/dx(ln x) = 1/x</code>',
+                    '<strong>Variance & Std Deviation:</strong> <code>σ² = (1/N) Σ f_i (x_i − x̄)²</code>; Standard Deviation <code>σ = √(Variance)</code>'
+                ]
+            },
+            {
+                subject: 'physics',
+                subjectLabel: '⚡ Physics Formulas',
+                chapter: 'NCERT Ch 2 & 3',
+                title: 'Kinematics: Motion in a Straight Line & Plane (Projectile)',
+                items: [
+                    '<strong>Equations of Uniformly Accelerated Motion:</strong> <code>v = u + at</code>; <code>s = ut + ½at²</code>; <code>v² − u² = 2as</code>; <code>s_nth = u + (a/2)(2n − 1)</code>',
+                    '<strong>Projectile Time of Flight & Height:</strong> <code>T = (2u sin θ) / g</code>; Maximum Height <code>H_max = (u² sin²θ) / (2g)</code>',
+                    '<strong>Horizontal Range:</strong> <code>R = (u² sin 2θ) / g</code> (Maximum at <code>θ = 45°</code> where <code>R_max = u² / g</code>)',
+                    '<strong>Uniform Circular Motion:</strong> Centripetal Acceleration <code>a_c = v² / r = ω²r</code>; Angular velocity <code>ω = 2π / T</code>'
+                ]
+            },
+            {
+                subject: 'physics',
+                subjectLabel: '⚡ Physics Formulas',
+                chapter: 'NCERT Ch 4 & 5',
+                title: 'Laws of Motion & Work, Energy and Power',
+                items: [
+                    '<strong>Newton\'s Second Law & Impulse:</strong> <code>F_net = dp/dt = ma</code>; Impulse <code>J = F · Δt = Δp</code>',
+                    '<strong>Friction & Circular Banking:</strong> Limiting Friction <code>f_max = μ_s N</code>; Safe speed on banked road (frictionless): <code>v = √(rg tan θ)</code>',
+                    '<strong>Work-Energy Theorem:</strong> Work done by all forces <code>W_total = ΔK = ½mv² − ½mu²</code>; Conservative force <code>F = −dU/dx</code>',
+                    '<strong>Power & Elastic Collision:</strong> Instantaneous Power <code>P = F⃗ · v⃗</code>; Coefficient of Restitution <code>e = (v₂ − v₁) / (u₁ − u₂)</code> (<code>e = 1</code> for elastic)'
+                ]
+            },
+            {
+                subject: 'physics',
+                subjectLabel: '⚡ Physics Formulas',
+                chapter: 'NCERT Ch 6 & 7',
+                title: 'System of Particles, Rotational Motion & Gravitation',
+                items: [
+                    '<strong>Torque & Angular Momentum:</strong> <code>τ⃗ = r⃗ × F⃗ = Iα⃗</code>; Angular Momentum <code>L⃗ = r⃗ × p⃗ = Iω⃗</code>; Rotational KE <code>K_rot = ½Iω²</code>',
+                    '<strong>Moment of Inertia Theorems:</strong> Parallel Axis <code>I = I_cm + Md²</code>; Perpendicular Axis <code>I_z = I_x + I_y</code>',
+                    '<strong>Variation of g:</strong> At height <code>h ≪ R</code>: <code>g\' = g(1 − 2h/R)</code>; At depth <code>d</code>: <code>g\' = g(1 − d/R)</code>',
+                    '<strong>Orbital & Escape Velocity:</strong> <code>v_o = √(GM/R)</code>; Escape velocity <code>v_e = √(2GM/R) = √2 · v_o ≈ 11.2 km/s</code>; Kepler\'s Law: <code>T² ∝ R³</code>'
+                ]
+            },
+            {
+                subject: 'physics',
+                subjectLabel: '⚡ Physics Formulas',
+                chapter: 'NCERT Ch 10, 11 & 13',
+                title: 'Thermodynamics, Kinetic Theory of Gases & Oscillations (SHM)',
+                items: [
+                    '<strong>First Law of Thermodynamics:</strong> <code>ΔQ = ΔU + ΔW</code> where <code>ΔW = PΔV</code>; Mayer\'s Formula: <code>C_p − C_v = R</code>',
+                    '<strong>Isothermal vs Adiabatic Work:</strong> Isothermal <code>W = 2.303 nRT log₁₀(V₂/V₁)</code>; Adiabatic (<code>PV^γ = const</code>): <code>W = (P₁V₁ − P₂V₂)/(γ − 1)</code>',
+                    '<strong>Gas Speeds (KTG):</strong> <code>v_rms = √(3RT/M)</code>; <code>v_avg = √(8RT/πM)</code>; <code>v_mp = √(2RT/M)</code>; Energy per degree of freedom <code>= ½k_B T</code>',
+                    '<strong>Simple Harmonic Motion:</strong> <code>a = −ω²x</code>; Velocity <code>v = ω√(A² − x²)</code>; Spring period <code>T = 2π√(m/k)</code>; Pendulum <code>T = 2π√(L/g)</code>'
+                ]
+            },
+            {
+                subject: 'chemistry',
+                subjectLabel: '🧪 Chemistry Short Notes',
+                chapter: 'NCERT Ch 1 & 2',
+                title: 'Some Basic Concepts (Mole Concept) & Structure of Atom',
+                items: [
+                    '<strong>Concentration Terms:</strong> Molarity <code>M = n_solute / V_solution(L)</code> (temp dependent); Molality <code>m = n_solute / W_solvent(kg)</code> (temp independent)',
+                    '<strong>Bohr Model for H-like Species:</strong> Radius <code>r_n = 0.529 × (n² / Z) Å</code>; Energy <code>E_n = −13.6 × (Z² / n²) eV/atom</code>',
+                    '<strong>Rydberg Formula:</strong> Wave number <code>ν̄ = 1/λ = R_H · Z² [1/n₁² − 1/n₂²]</code> (Lyman: UV, Balmer: Visible, Paschen/Brackett/Pfund: IR)',
+                    '<strong>Quantum Mechanics:</strong> de Broglie <code>λ = h / (mv) = h / √(2m·KE)</code>; Heisenberg Uncertainty <code>Δx · Δp ≥ h / (4π)</code>'
+                ]
+            },
+            {
+                subject: 'chemistry',
+                subjectLabel: '🧪 Chemistry Short Notes',
+                chapter: 'NCERT Ch 3 & 4',
+                title: 'Periodic Classification & Chemical Bonding (VSEPR & MOT)',
+                items: [
+                    '<strong>Periodic Exceptions:</strong> Ionization Enthalpy <code>Be > B</code> (2s² full) and <code>N > O</code> (2p³ half-filled); Electron Gain Enthalpy: <code>Cl > F > Br > I</code>',
+                    '<strong>Steric Number / Hybridization:</strong> <code>H = ½ [V + M − C + A]</code> (2: <code>sp</code> linear, 3: <code>sp²</code> trigonal planar, 4: <code>sp³</code> tetrahedral)',
+                    '<strong>Dipole Moment:</strong> <code>μ = q × d</code> (Measured in Debye); <code>NH₃ > NF₃</code> because orbital dipole of lone pair aligns with N–H bonds in NH₃',
+                    '<strong>Molecular Orbital Theory (MOT):</strong> Bond Order <code>= ½ (N_bonding − N_antibonding)</code>; <code>O₂</code> has Bond Order <code>2.0</code> and is paramagnetic (2 unpaired e⁻ in <code>π*2p</code>)'
+                ]
+            },
+            {
+                subject: 'chemistry',
+                subjectLabel: '🧪 Chemistry Short Notes',
+                chapter: 'NCERT Ch 5 & 6',
+                title: 'Chemical Thermodynamics & Chemical/Ionic Equilibrium',
+                items: [
+                    '<strong>Enthalpy & Internal Energy:</strong> <code>ΔH = ΔU + Δn_g RT</code> where <code>Δn_g = (moles of gaseous products − gaseous reactants)</code>',
+                    '<strong>Gibbs Free Energy & Spontaneity:</strong> <code>ΔG = ΔH − TΔS</code> (Spontaneous if <code>ΔG < 0</code>); Standard relation: <code>ΔG° = −2.303 RT log₁₀ K_eq</code>',
+                    '<strong>Equilibrium Constants:</strong> <code>K_p = K_c (RT)^(Δn_g)</code>; Le Chatelier\'s Principle: High P favors side with fewer gas moles; Endothermic favored by high T',
+                    '<strong>Ionic Equilibrium & Buffers:</strong> Ostwald Dilution <code>α = √(K_a / C)</code>; Henderson Equation for Acidic Buffer: <code>pH = pK_a + log([Salt]/[Acid])</code>'
+                ]
+            },
+            {
+                subject: 'chemistry',
+                subjectLabel: '🧪 Chemistry Short Notes',
+                chapter: 'NCERT Ch 8 & 9',
+                title: 'Organic Chemistry (GOC) & Hydrocarbons Short Notes',
+                items: [
+                    '<strong>Electronic Effects:</strong> Carbocation & Free Radical stability: <code>Benzyl > Allyl > 3° > 2° > 1° > CH₃⁺</code> (via +I and α-H Hyperconjugation)',
+                    '<strong>Carbanion & Acidic Strength:</strong> Carbanion stability: <code>CH₃⁻ > 1° > 2° > 3°</code>; Acidic strength increases with <code>−I, −M</code> groups (<code>−NO₂ > −CN > −F > −Cl</code>)',
+                    '<strong>Alkene Additions:</strong> HBr addition follows Markovnikov\'s Rule (via carbocation); With Peroxide (<code>R₂O₂</code>) HBr shows Anti-Markovnikov (Kharasch free-radical)',
+                    '<strong>Aromaticity & Ozonolysis:</strong> Hückel\'s Rule: Cyclic, planar, conjugated with <code>(4n + 2) π</code> electrons; Reductive ozonolysis (<code>O₃ / Zn-H₂O</code>) cleaves <code>C=C</code> into aldehydes/ketones'
+                ]
+            },
+            {
+                subject: 'biology',
+                subjectLabel: '🧬 Biology Short Notes',
+                chapter: 'NCERT Unit I (Ch 1–4)',
+                title: 'Diversity in the Living World: Plant & Animal Kingdom',
+                items: [
+                    '<strong>Five Kingdom Classification (Whittaker 1969):</strong> Monera (Prokaryotic, peptidoglycan cell wall), Protista, Fungi (Chitin cell wall), Plantae, Animalia',
+                    '<strong>Algae Classes Comparison:</strong> Chlorophyceae (Chl a, b; Starch), Phaeophyceae (Chl a, c, Fucoxanthin; Mannitol & Laminarin), Rhodophyceae (Chl a, d, Phycoerythrin; Floridean starch)',
+                    '<strong>Bryophytes vs Pteridophytes:</strong> Bryophytes ("Amphibians of plant kingdom", dominant haploid gametophyte); Pteridophytes (First vascular plants with xylem/phloem, dominant sporophyte; Selaginella & Salvinia are heterosporous)',
+                    '<strong>Animal Phyla Key Hallmarks:</strong> Porifera (Canal system/Choanocytes), Cnidaria (Cnidoblasts/Metagenesis), Platyhelminthes (Flame cells, acoelomate), Aschelminthes (Pseudocoelomate), Arthropoda (Chitinous exoskeleton, Malpighian tubules)'
+                ]
+            },
+            {
+                subject: 'biology',
+                subjectLabel: '🧬 Biology Short Notes',
+                chapter: 'NCERT Unit II & III (Ch 8–10)',
+                title: 'Cell: The Unit of Life, Biomolecules & Cell Cycle (Mitosis/Meiosis)',
+                items: [
+                    '<strong>Cell Organelles:</strong> Plasma membrane Fluid Mosaic Model (Singer & Nicolson, 1972); Mitochondria & Chloroplasts are semi-autonomous (contain circular dsDNA + 70S ribosomes)',
+                    '<strong>Biomolecules & Enzymes:</strong> Competitive inhibition (e.g., Malonate inhibiting Succinic dehydrogenase — increases K_m without changing V_max); Peptide bond links amino acids, Phosphodiester links nucleotides',
+                    '<strong>Cell Cycle Phases:</strong> Interphase = G₁ (organelle duplication) → S phase (DNA replication: 2C becomes 4C, chromosome number 2n stays same) → G₂ (tubulin synthesis)',
+                    '<strong>Meiosis-I Prophase-I Substages:</strong> <strong>L</strong>eptotene (compaction) → <strong>Z</strong>ygotene (synapsis & synaptonemal complex) → <strong>P</strong>achytene (crossing over via recombinase) → <strong>D</strong>iplotene (chiasmata visible) → <strong>D</strong>iakinesis (terminalisation)'
+                ]
+            },
+            {
+                subject: 'biology',
+                subjectLabel: '🧬 Biology Short Notes',
+                chapter: 'NCERT Unit IV (Ch 11–13)',
+                title: 'Plant Physiology: Photosynthesis, Cellular Respiration & PGRs',
+                items: [
+                    '<strong>Light Reaction (Z-Scheme):</strong> Non-cyclic photophosphorylation (PS II 680nm → PS I 700nm) yields ATP + NADPH + O₂ (via photolysis of water requiring Mn²⁺ and Cl⁻)',
+                    '<strong>C₃ vs C₄ Pathway:</strong> C₃ (RuBisCO, 1st product 3-PGA, photorespiration present); C₄ / Hatch-Slack (Kranz anatomy, PEPcase in mesophyll, 1st product OAA, zero photorespiration)',
+                    '<strong>Aerobic Respiration Balance:</strong> Glycolysis (EMP pathway in cytoplasm: net 2 ATP + 2 NADH); Link Reaction & Krebs Cycle (Mitochondrial matrix: 6 NADH, 2 FADH₂, 2 GTP per glucose); Net yield = 36 or 38 ATP',
+                    '<strong>Plant Growth Regulators:</strong> Auxin (Apical dominance, rooting), Gibberellin (GA₃: Bolting & internode elongation), Cytokinin (Delays senescence — Richmond-Lang effect), Ethylene (Fruit ripening), ABA (Stress hormone / stomatal closure)'
+                ]
+            },
+            {
+                subject: 'biology',
+                subjectLabel: '🧬 Biology Short Notes',
+                chapter: 'NCERT Unit V (Ch 14–19)',
+                title: 'Human Physiology: Breathing, Circulation, Excretion & Neural Control',
+                items: [
+                    '<strong>Breathing & Gas Exchange:</strong> O₂-Hb Dissociation Curve is Sigmoid; Right shift (favors O₂ unloading at tissues) caused by High pCO₂, High H⁺, High Temp, High 2,3-BPG',
+                    '<strong>Body Fluids & Cardiac Cycle:</strong> SAN ("Pacemaker", 70–75 min⁻¹); Cardiac cycle = 0.8s; Stroke Volume = 70 mL; Cardiac Output = SV × HR ≈ 5000 mL/min; ECG: P-wave (atrial depolarisation), QRS (ventricular depolarisation), T-wave (repolarisation)',
+                    '<strong>Excretory System:</strong> GFR = 125 mL/min (180 L/day); PCT reabsorbs 70–80% electrolytes & 100% glucose; Counter-current mechanism (Henle\'s loop + Vasa recta) maintains medullary osmolarity gradient (300 to 1200 mOsmol/L)',
+                    '<strong>Neural & Endocrine:</strong> Resting axonal membrane is polarized (3 Na⁺ pumped out for 2 K⁺ in); Action potential = rapid Na⁺ influx; Sliding Filament Theory of muscle contraction driven by Ca²⁺ binding to Troponin-C'
+                ]
+            }
+        ];
+
+        const decoyStudyPortal = document.getElementById('decoy-study-portal');
+        const decoyNotesGrid = document.getElementById('decoy-notes-grid');
+        const decoySearchInput = document.getElementById('decoy-search-input');
+        const decoyLockBtn = document.getElementById('decoy-lock-btn');
+        const decoyTabBtns = document.querySelectorAll('.decoy-tab-btn');
+        let activeDecoySubject = 'all';
+
+        function renderDecoyNotes() {
+            if (!decoyNotesGrid) return;
+            const query = (decoySearchInput ? decoySearchInput.value : '').trim().toLowerCase();
+            decoyNotesGrid.innerHTML = '';
+
+            const filtered = decoyNcertModules.filter(mod => {
+                const subjectMatch = activeDecoySubject === 'all' || mod.subject === activeDecoySubject;
+                if (!subjectMatch) return false;
+                if (!query) return true;
+                const haystack = (mod.title + ' ' + mod.chapter + ' ' + mod.items.join(' ')).toLowerCase();
+                return haystack.includes(query);
+            });
+
+            filtered.forEach(mod => {
+                const card = document.createElement('article');
+                card.className = 'decoy-note-card';
+                card.innerHTML = `
+                    <div class="decoy-card-top">
+                        <span class="decoy-subject-tag ${mod.subject}">${mod.subjectLabel}</span>
+                        <span class="decoy-chapter-code">${mod.chapter}</span>
+                    </div>
+                    <h2 class="decoy-note-title">${mod.title}</h2>
+                    <ul class="decoy-formula-list">
+                        ${mod.items.map(item => `<li class="decoy-formula-item">${item}</li>`).join('')}
+                    </ul>
+                `;
+                decoyNotesGrid.appendChild(card);
+            });
+        }
+
+        decoyTabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                decoyTabBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                activeDecoySubject = btn.getAttribute('data-decoy-subject') || 'all';
+                renderDecoyNotes();
+            });
+        });
+
+        if (decoySearchInput) {
+            decoySearchInput.addEventListener('input', renderDecoyNotes);
+        }
+
+        if (decoyLockBtn) {
+            decoyLockBtn.addEventListener('click', () => {
+                decoyStudyPortal.classList.remove('visible');
+                decoyStudyPortal.setAttribute('aria-hidden', 'true');
+                document.title = 'Protected Portal';
+                document.body.style.overflow = 'hidden';
+                passwordOverlay.style.display = 'flex';
+                void passwordOverlay.offsetWidth;
+                passwordOverlay.classList.remove('hidden');
+                passwordInput.value = '';
+                passwordInput.focus();
+            });
+        }
+
+        // ─── Smooth Soothing Loading Screen Controller (2–3 Seconds) ───
+        function runSanctuaryLoader(titleText, statusText, durationMs, onComplete) {
+            loaderTitleEl.textContent = titleText;
+            loaderStatusEl.textContent = statusText;
+            loaderProgressBar.style.transition = 'none';
+            loaderProgressBar.style.width = '0%';
+            sanctuaryLoader.classList.remove('hidden');
+
+            // Force reflow then animate progress smoothly
+            void loaderProgressBar.offsetWidth;
+            loaderProgressBar.style.transition = `width ${Math.max(100, durationMs - 150)}ms cubic-bezier(0.22, 1, 0.36, 1)`;
+            loaderProgressBar.style.width = '100%';
+
+            setTimeout(() => {
+                sanctuaryLoader.classList.add('hidden');
+                if (typeof onComplete === 'function') {
+                    onComplete();
+                }
+            }, durationMs);
+        }
+
+        // ─── 1. Discreet Opening Animation on Website Load (2.4 seconds) ───
+        runSanctuaryLoader(
+            'Protected Portal',
+            'Initializing secure environment…',
+            LOADER_DURATION_MS,
+            () => {
+                if (isAutoStart) {
+                    passwordInput.value = YOUR_PASSWORD;
+                    checkPassword();
+                } else if (isDecoyStart) {
+                    passwordInput.value = DECOY_PASSWORD;
+                    checkPassword();
+                } else {
+                    passwordInput.focus();
+                }
+            }
+        );
+
+        // ─── Show / Hide Password Toggle ───
+        passwordToggleEye.addEventListener('click', () => {
+            const isHidden = passwordInput.type === 'password';
+            passwordInput.type = isHidden ? 'text' : 'password';
+            passwordToggleEye.textContent = isHidden ? 'Hide' : 'Show';
+            passwordToggleEye.setAttribute('aria-label', isHidden ? 'Hide passcode' : 'Show passcode');
+            passwordInput.focus();
+        });
+
+        // ─── Password Protection (Real Password vs Decoy Password "0000") + Cooldown Security ───
+        let failedAttempts = 0;
+        let isLockedOut = false;
+
+        function checkPassword() {
+            if (isLockedOut) return;
+            const entered = passwordInput.value.trim();
+
+            if (entered === YOUR_PASSWORD) {
+                failedAttempts = 0;
+                passwordError.classList.remove('show');
+                passwordOverlay.classList.add('hidden');
+                loaderCenterIcon.textContent = '✦';
+
+                // Show smooth transition screen after entering real password before opening main journal
+                runSanctuaryLoader(
+                    'Welcome Home ♥',
+                    'Opening your private chapters & memories…',
+                    LOADER_DURATION_MS,
+                    () => {
+                        populateProtectedJournalCopy();
+                        mainContent.classList.add('visible');
+                        mainContent.setAttribute('aria-hidden', 'false');
+                        startCanvasAnimation();
+                        renderStories();
+                        document.body.style.overflow = 'auto';
+                        passwordOverlay.style.display = 'none';
+                        requestProgressSync();
+                    }
+                );
+            } else if (entered === DECOY_PASSWORD) {
+                // DECOY MODE ("0000"): Unlock Class 11 NCERT Study Notes Portal
+                failedAttempts = 0;
+                passwordError.classList.remove('show');
+                passwordOverlay.classList.add('hidden');
+                loaderCenterIcon.textContent = '◈';
+
+                runSanctuaryLoader(
+                    'NCERT Class 11 Study Vault',
+                    'Loading Maths, Physics, Chemistry & Biology revision modules…',
+                    LOADER_DURATION_MS,
+                    () => {
+                        document.title = 'Class 11 NCERT Revision Hub · PCMB Formulas & Short Notes';
+                        renderDecoyNotes();
+                        decoyStudyPortal.classList.add('visible');
+                        decoyStudyPortal.setAttribute('aria-hidden', 'false');
+                        document.body.style.overflow = 'auto';
+                        passwordOverlay.style.display = 'none';
+                        window.scrollTo(0, 0);
+                    }
+                );
+            } else {
+                failedAttempts++;
+                passwordInput.value = '';
+                passwordInput.focus();
+
+                if (failedAttempts >= 5) {
+                    isLockedOut = true;
+                    passwordSubmit.disabled = true;
+                    passwordInput.disabled = true;
+                    let remaining = 15;
+                    passwordError.textContent = `Too many attempts · Please wait ${remaining}s`;
+                    passwordError.classList.add('show');
+
+                    const timer = setInterval(() => {
+                        remaining--;
+                        if (remaining <= 0) {
+                            clearInterval(timer);
+                            isLockedOut = false;
+                            failedAttempts = 0;
+                            passwordSubmit.disabled = false;
+                            passwordInput.disabled = false;
+                            passwordError.textContent = "Invalid passcode. Please try again.";
+                            passwordError.classList.remove('show');
+                            passwordInput.focus();
+                        } else {
+                            passwordError.textContent = `Too many attempts · Please wait ${remaining}s`;
+                        }
+                    }, 1000);
+                } else {
+                    passwordError.textContent = "Invalid passcode. Please try again.";
+                    passwordError.classList.add('show');
+                }
+
+                // Gentle shake animation
+                passwordInput.style.animation = 'none';
+                void passwordInput.offsetWidth;
+                passwordInput.style.animation = 'shake 0.45s ease';
+            }
+        }
+
+        // Add shake animation dynamically
+        const shakeStyle = document.createElement('style');
+        shakeStyle.textContent = `
+            @keyframes shake {
+                0%, 100% { transform: translateX(0); }
+                20% { transform: translateX(-8px); }
+                40% { transform: translateX(8px); }
+                60% { transform: translateX(-5px); }
+                80% { transform: translateX(5px); }
+            }
+        `;
+        document.head.appendChild(shakeStyle);
+
+        passwordSubmit.addEventListener('click', checkPassword);
+        passwordInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                checkPassword();
+            }
+        });
+
+        // ─── Settings Tab Drawer & 2-Tier Theme Switcher (Light/Dark + Sub-Themes) ───
+        const settingsTabTrigger = document.getElementById('settings-tab-trigger');
+        const settingsBackdrop = document.getElementById('settings-backdrop');
+        const settingsCloseBtn = document.getElementById('settings-close-btn');
+        const modeLightBtn = document.getElementById('mode-light-btn');
+        const modeDarkBtn = document.getElementById('mode-dark-btn');
+        const lightSubthemesGrid = document.getElementById('light-subthemes-grid');
+        const darkSubthemesGrid = document.getElementById('dark-subthemes-grid');
+        const subthemesGroupLabel = document.getElementById('subthemes-group-label');
+
+        let lastLightSubTheme = 'linen';
+        let lastDarkSubTheme = 'twilight';
+
+        function openSettingsTab() {
+            settingsBackdrop.classList.add('open');
+            settingsTabTrigger.setAttribute('aria-expanded', 'true');
+        }
+        function closeSettingsTab() {
+            settingsBackdrop.classList.remove('open');
+            settingsTabTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        settingsTabTrigger.addEventListener('click', () => {
+            if (settingsBackdrop.classList.contains('open')) {
+                closeSettingsTab();
+            } else {
+                openSettingsTab();
+            }
+        });
+        settingsCloseBtn.addEventListener('click', closeSettingsTab);
+        settingsBackdrop.addEventListener('click', (e) => {
+            if (e.target === settingsBackdrop) closeSettingsTab();
+        });
+
+        function setMainThemeCategoryUI(mode) {
+            const isDark = mode === 'dark';
+            modeLightBtn.classList.toggle('active', !isDark);
+            modeDarkBtn.classList.toggle('active', isDark);
+            lightSubthemesGrid.classList.toggle('hidden', isDark);
+            darkSubthemesGrid.classList.toggle('hidden', !isDark);
+            subthemesGroupLabel.textContent = isDark ? '2. Dark Sub-Themes' : '2. Light Sub-Themes';
+        }
+
+        function applyTheme(themeName) {
+            document.documentElement.setAttribute('data-theme', themeName);
+            let detectedMode = 'light';
+            themeButtons.forEach(btn => {
+                const isMatch = btn.getAttribute('data-theme-choice') === themeName;
+                btn.classList.toggle('active', isMatch);
+                if (isMatch) {
+                    detectedMode = btn.getAttribute('data-theme-mode') || 'light';
+                }
+            });
+
+            if (detectedMode === 'dark') {
+                lastDarkSubTheme = themeName;
+            } else {
+                lastLightSubTheme = themeName;
+            }
+            setMainThemeCategoryUI(detectedMode);
+
+            try {
+                localStorage.setItem('private_journal_theme', themeName);
+            } catch (_e) {}
+        }
+
+        modeLightBtn.addEventListener('click', () => {
+            applyTheme(lastLightSubTheme || 'linen');
+        });
+        modeDarkBtn.addEventListener('click', () => {
+            applyTheme(lastDarkSubTheme || 'twilight');
+        });
+
+        themeButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const chosen = btn.getAttribute('data-theme-choice');
+                if (chosen) applyTheme(chosen);
+            });
+        });
+
+        // Restore saved theme if present
+        try {
+            const savedTheme = localStorage.getItem('private_journal_theme');
+            if (savedTheme) applyTheme(savedTheme);
+        } catch (_e) {}
+
+        // ─── Cozy Reading Mode & Font Size Controls ───
+        cozyReadingToggle.addEventListener('click', () => {
+            const isCozy = document.body.classList.toggle('cozy-reading-mode');
+            cozyReadingToggle.classList.toggle('active', isCozy);
+            cozyReadingToggle.setAttribute('aria-pressed', String(isCozy));
+            cozyReadingToggle.textContent = isCozy ? '✨ Exit Cozy Mode' : '📖 Cozy Reading Mode';
+        });
+
+        let currentFontRem = 1.18;
+        function updateStoryFontSize(newRem) {
+            currentFontRem = Math.min(1.55, Math.max(0.98, Number(newRem.toFixed(2))));
+            document.documentElement.style.setProperty('--story-font-size', `${currentFontRem}rem`);
+        }
+        fontDecreaseBtn.addEventListener('click', () => updateStoryFontSize(currentFontRem - 0.08));
+        fontIncreaseBtn.addEventListener('click', () => updateStoryFontSize(currentFontRem + 0.08));
+
+        // ─── Inline [IMAGE: ...] and [AUDIO: ...] Parser & Renderer ───
+        function openImageLightbox(src, caption) {
+            imageLightboxImg.src = src;
+            imageLightboxImg.alt = caption || 'Memory photo';
+            imageLightboxCaption.textContent = caption || '';
+            imageLightbox.classList.add('open');
+        }
+        function closeImageLightbox() {
+            imageLightbox.classList.remove('open');
+            imageLightboxImg.src = '';
+        }
+        imageLightboxClose.addEventListener('click', closeImageLightbox);
+        imageLightbox.addEventListener('click', (e) => {
+            if (e.target === imageLightbox) closeImageLightbox();
+        });
+
+        function populateStoryContentWithMedia(container, rawText) {
+            const hasShortcode = /\[(IMAGE|AUDIO)\s*:/i.test(rawText);
+            if (!hasShortcode) {
+                // Keep 100% exact text rendering when no media tags are used
+                container.style.whiteSpace = 'pre-wrap';
+                container.textContent = rawText;
+                return;
+            }
+
+            const tokenRegex = /\[(IMAGE|AUDIO)\s*:\s*([^\]|]+?)(?:\s*\|\s*([^\]]*?))?\s*\]/gi;
+            let lastIndex = 0;
+            let match;
+
+            while ((match = tokenRegex.exec(rawText)) !== null) {
+                if (match.index > lastIndex) {
+                    const textSpan = document.createElement('span');
+                    textSpan.className = 'story-text-segment';
+                    textSpan.textContent = rawText.slice(lastIndex, match.index);
+                    container.appendChild(textSpan);
+                }
+
+                const mediaType = match[1].toUpperCase();
+                const mediaSrc = match[2].trim();
+                const mediaLabel = (match[3] || '').trim();
+
+                if (mediaType === 'IMAGE') {
+                    const figure = document.createElement('figure');
+                    figure.className = 'story-inline-image-figure';
+
+                    const img = document.createElement('img');
+                    img.src = mediaSrc;
+                    img.alt = mediaLabel || 'Journal memory photo';
+                    img.loading = 'lazy';
+                    img.addEventListener('click', () => openImageLightbox(mediaSrc, mediaLabel));
+
+                    figure.appendChild(img);
+
+                    if (mediaLabel) {
+                        const figcap = document.createElement('figcaption');
+                        figcap.className = 'story-inline-image-caption';
+                        figcap.textContent = mediaLabel;
+                        figure.appendChild(figcap);
+                    }
+                    container.appendChild(figure);
+                } else if (mediaType === 'AUDIO') {
+                    const audioBox = document.createElement('div');
+                    audioBox.className = 'story-inline-audio-box';
+
+                    const header = document.createElement('div');
+                    header.className = 'story-inline-audio-header';
+                    header.textContent = `♪ ${mediaLabel || 'Audio Memory'}`;
+
+                    const audioEl = document.createElement('audio');
+                    audioEl.controls = true;
+                    audioEl.preload = 'metadata';
+                    audioEl.src = mediaSrc;
+
+                    audioBox.appendChild(header);
+                    audioBox.appendChild(audioEl);
+                    container.appendChild(audioBox);
+                }
+
+                lastIndex = tokenRegex.lastIndex;
+            }
+
+            if (lastIndex < rawText.length) {
+                const tailSpan = document.createElement('span');
+                tailSpan.className = 'story-text-segment';
+                tailSpan.textContent = rawText.slice(lastIndex);
+                container.appendChild(tailSpan);
+            }
+        }
+
+        // ─── Render Story Cards ───
+        function renderStories() {
+            storiesContainer.innerHTML = '';
+            loveStories.forEach((story, index) => {
+                const card = document.createElement('div');
+                card.className = 'story-card';
+                card.style.animationDelay = `${0.1 + index * 0.08}s`;
+
+                // Timeline node
+                const node = document.createElement('div');
+                node.className = 'timeline-node';
+
+                // Story number
+                const number = document.createElement('span');
+                number.className = 'story-number';
+                number.textContent = `No. ${String(index + 1).padStart(2, '0')}`;
+
+                // Date badge
+                const dateBadge = document.createElement('span');
+                dateBadge.className = 'story-date-badge';
+                dateBadge.textContent = `✦ ${story.date} ✦`;
+
+                // Title
+                const title = document.createElement('h3');
+                title.className = 'story-title';
+                title.textContent = story.title;
+
+                // Quote mark
+                const quoteMark = document.createElement('div');
+                quoteMark.className = 'story-quote-mark';
+                quoteMark.textContent = '"';
+
+                // Content (supports plain text 100% untouched + inline [IMAGE:...] and [AUDIO:...])
+                const content = document.createElement('div');
+                content.className = 'story-content';
+                populateStoryContentWithMedia(content, story.content);
+
+                // Heart icon at bottom
+                const heartIcon = document.createElement('div');
+                heartIcon.className = 'story-heart-icon';
+                heartIcon.textContent = '♥';
+
+                // Assemble card
+                card.appendChild(node);
+                card.appendChild(number);
+                card.appendChild(dateBadge);
+                card.appendChild(title);
+                card.appendChild(quoteMark);
+                card.appendChild(content);
+                card.appendChild(heartIcon);
+
+                storiesContainer.appendChild(card);
+            });
+        }
+
+        // ─── Serene Floating Light Motes Canvas (Calming & Gentle) ───
+        const canvas = document.getElementById('star-canvas');
+        const ctx = canvas.getContext('2d');
+        let motes = [];
+        let canvasAnimationStarted = false;
+
+        function initCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        function generateMotes() {
+            motes = [];
+            const count = Math.min(45, Math.floor(window.innerWidth / 28));
+            for (let i = 0; i < count; i++) {
+                motes.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    radius: Math.random() * 2.2 + 0.8,
+                    baseOpacity: Math.random() * 0.22 + 0.08,
+                    speedY: -(Math.random() * 0.18 + 0.05),
+                    driftX: (Math.random() - 0.5) * 0.15,
+                    phase: Math.random() * Math.PI * 2,
+                });
+            }
+        }
+
+        function drawMotes(time) {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            const rgb = getComputedStyle(document.documentElement).getPropertyValue('--particle-rgb').trim() || '176, 125, 82';
+
+            motes.forEach(m => {
+                m.y += m.speedY;
+                m.x += m.driftX + Math.sin(time * 0.008 + m.phase) * 0.08;
+                if (m.y < -10) m.y = canvas.height + 10;
+                if (m.x < -10) m.x = canvas.width + 10;
+                if (m.x > canvas.width + 10) m.x = -10;
+
+                const pulse = Math.sin(time * 0.012 + m.phase) * 0.3 + 0.7;
+                const alpha = m.baseOpacity * pulse;
+
+                ctx.beginPath();
+                ctx.arc(m.x, m.y, m.radius, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(${rgb}, ${alpha})`;
+                ctx.fill();
+            });
+        }
+
+        function startCanvasAnimation() {
+            if (canvasAnimationStarted) return;
+            canvasAnimationStarted = true;
+            initCanvas();
+            generateMotes();
+            let time = 0;
+
+            function animate() {
+                time++;
+                drawMotes(time);
+                requestAnimationFrame(animate);
+            }
+            animate();
+        }
+
+        window.addEventListener('resize', () => {
+            if (canvasAnimationStarted) {
+                initCanvas();
+                generateMotes();
+                requestProgressSync();
+            }
+        }, { passive: true });
+
+        // ─── Smooth Scroll Enhancer + Soothing Bottom Reading Progress Bar ───
+        let storyCardElements = [];
+        let progressRafPending = false;
+
+        function updateReadingProgressUI() {
+            progressRafPending = false;
+            if (!mainContent.classList.contains('visible')) return;
+
+            const scrollTop = window.scrollY || document.documentElement.scrollTop || 0;
+            const docHeight = Math.max(
+                document.body.scrollHeight,
+                document.documentElement.scrollHeight
+            );
+            const winHeight = window.innerHeight || document.documentElement.clientHeight || 1;
+            const maxScroll = Math.max(1, docHeight - winHeight);
+            const rawPct = (scrollTop / maxScroll) * 100;
+            const clampedPct = Math.min(100, Math.max(0, Math.round(rawPct)));
+
+            readingBarFill.style.width = `${clampedPct}%`;
+            readingRibbonFill.style.width = `${clampedPct}%`;
+
+            // Determine active chapter based on viewport center
+            const viewportFocusY = scrollTop + winHeight * 0.45;
+            let activeChapter = 1;
+            for (let i = 0; i < storyCardElements.length; i++) {
+                const rect = storyCardElements[i].getBoundingClientRect();
+                const cardTop = rect.top + scrollTop;
+                if (viewportFocusY >= cardTop) {
+                    activeChapter = i + 1;
+                } else {
+                    break;
+                }
+            }
+
+            const totalCount = loveStories.length;
+            if (clampedPct >= 99) {
+                readingCuteIcon.textContent = '♥';
+                readingChapterStatus.textContent = `All ${totalCount} Chapters Read`;
+                readingPctBadge.textContent = '100% ♥';
+            } else {
+                readingCuteIcon.textContent = '✿';
+                readingChapterStatus.textContent = `Chapter ${String(activeChapter).padStart(2, '0')} of ${String(totalCount).padStart(2, '0')}`;
+                readingPctBadge.textContent = `${clampedPct}% read`;
+            }
+
+            if (scrollTop > 400) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        }
+
+        function requestProgressSync() {
+            if (!progressRafPending) {
+                progressRafPending = true;
+                requestAnimationFrame(updateReadingProgressUI);
+            }
+        }
+
+        window.addEventListener('scroll', requestProgressSync, { passive: true });
+
+        // Silky-smooth desktop wheel glide physics (yields to trackpads, modals, and touch)
+        let wheelTargetY = 0;
+        let wheelCurrentY = 0;
+        let wheelGlideActive = false;
+
+        function animateWheelGlide() {
+            if (!wheelGlideActive) return;
+            const diff = wheelTargetY - wheelCurrentY;
+            if (Math.abs(diff) < 0.6) {
+                window.scrollTo(0, wheelTargetY);
+                wheelGlideActive = false;
+                return;
+            }
+            wheelCurrentY += diff * 0.14;
+            window.scrollTo(0, wheelCurrentY);
+            requestAnimationFrame(animateWheelGlide);
+        }
+
+        window.addEventListener('wheel', (e) => {
+            if (!mainContent.classList.contains('visible')) return;
+            if (settingsBackdrop.classList.contains('open')) return;
+            if (e.ctrlKey || e.metaKey) return;
+
+            // Enhance discrete mouse-wheel ticks while letting high-frequency trackpads use native momentum
+            const isDiscreteWheel = e.deltaMode === 1 || Math.abs(e.deltaY) >= 48;
+            if (!isDiscreteWheel) {
+                wheelGlideActive = false;
+                return;
+            }
+
+            e.preventDefault();
+            const maxScroll = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+            if (!wheelGlideActive) {
+                wheelCurrentY = window.scrollY;
+                wheelTargetY = window.scrollY;
+            }
+            const stepDelta = e.deltaMode === 1 ? e.deltaY * 36 : e.deltaY * 0.92;
+            wheelTargetY = Math.min(maxScroll, Math.max(0, wheelTargetY + stepDelta));
+
+            if (!wheelGlideActive) {
+                wheelGlideActive = true;
+                requestAnimationFrame(animateWheelGlide);
+            }
+        }, { passive: false });
+
+        if (scrollHintTrigger) {
+            scrollHintTrigger.addEventListener('click', () => {
+                wheelGlideActive = false;
+                const section = document.getElementById('stories-section');
+                if (section) section.scrollIntoView({ behavior: 'smooth' });
+            });
+        }
+
+        backToTopBtn.addEventListener('click', () => {
+            wheelGlideActive = false;
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ─── GPU-Smooth Intersection Observer for Card Reveal ───
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                }
+            });
+        }, {
+            threshold: 0.06,
+            rootMargin: '0px 0px -30px 0px',
+        });
+
+        function observeCards() {
+            storyCardElements = Array.from(document.querySelectorAll('.story-card'));
+            storyCardElements.forEach((card, index) => {
+                if (index < 2) {
+                    card.classList.add('in-view');
+                }
+                observer.observe(card);
+            });
+        }
+
+        const originalRenderStories = renderStories;
+        renderStories = function() {
+            originalRenderStories();
+            observeCards();
+            requestProgressSync();
+        };
+
+        // ─── Multi-Layer Anti-Inspect, Anti-DevTools & Anti-Source-Copy Protection ───
+        const devtoolsShield = document.getElementById('devtools-shield');
+        let toastTimeout = null;
+
+        function showSecurityNotice() {
+            securityToast.classList.add('show');
+            if (toastTimeout) clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => {
+                securityToast.classList.remove('show');
+            }, 2400);
+        }
+
+        function blockEvent(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (typeof e.stopImmediatePropagation === 'function') {
+                e.stopImmediatePropagation();
+            }
+            showSecurityNotice();
+            return false;
+        }
+
+        // 1. Block Right-Click & Secondary Mouse Clicks in Capture Phase
+        window.addEventListener('contextmenu', blockEvent, { capture: true });
+        window.addEventListener('auxclick', (e) => {
+            if (e.button === 2) blockEvent(e);
+        }, { capture: true });
+
+        // 2. Block Copy, Cut, Drag & Text Selection Outside Password Field
+        window.addEventListener('copy', blockEvent, { capture: true });
+        window.addEventListener('cut', blockEvent, { capture: true });
+        window.addEventListener('dragstart', blockEvent, { capture: true });
+        window.addEventListener('selectstart', (e) => {
+            if (e.target !== passwordInput && e.target !== decoySearchInput) {
+                e.preventDefault();
+            }
+        }, { capture: true });
+
+        // 3. Block All Function Keys (F1-F12) & All DevTools/View-Source/Save/Print Shortcuts in Capture Phase
+        function handleKeyGuard(e) {
+            if (e.key === 'Escape' && imageLightbox.classList.contains('open')) {
+                closeImageLightbox();
+                return;
+            }
+            if (e.key === '/' && !passwordOverlay.classList.contains('hidden') && document.activeElement !== passwordInput) {
+                e.preventDefault();
+                passwordInput.focus();
+                return;
+            }
+
+            const key = (e.key || '').toUpperCase();
+            const code = (e.code || '').toUpperCase();
+            const keyCode = e.keyCode || e.which || 0;
+            const ctrlOrMeta = e.ctrlKey || e.metaKey;
+
+            // Any function key F1 through F12 (keyCode 112 - 123)
+            const isFunctionKey =
+                /^F([1-9]|1[0-2])$/.test(key) ||
+                /^F([1-9]|1[0-2])$/.test(code) ||
+                (keyCode >= 112 && keyCode <= 123);
+
+            // Windows/Linux & Mac DevTools / Inspect / Console / Network / Profiler / Responsive Mode
+            const devChars = ['I', 'J', 'C', 'K', 'E', 'M', 'P'];
+            const isInspectCombo =
+                (ctrlOrMeta && e.shiftKey && devChars.includes(key)) ||
+                (ctrlOrMeta && e.altKey && (devChars.includes(key) || key === 'U')) ||
+                (e.metaKey && e.altKey && (keyCode === 73 || keyCode === 74 || keyCode === 67 || keyCode === 85)) ||
+                (ctrlOrMeta && e.shiftKey && (keyCode === 73 || keyCode === 74 || keyCode === 67));
+
+            // View Source (Ctrl+U), Save Page (Ctrl+S), Print Page (Ctrl+P)
+            const isSourceSavePrint =
+                ctrlOrMeta && (key === 'U' || key === 'S' || key === 'P' || keyCode === 85 || keyCode === 83 || keyCode === 80);
+
+            if (isFunctionKey || isInspectCombo || isSourceSavePrint) {
+                return blockEvent(e);
+            }
+        }
+
+        window.addEventListener('keydown', handleKeyGuard, { capture: true });
+        window.addEventListener('keyup', (e) => {
+            const key = (e.key || '').toUpperCase();
+            const keyCode = e.keyCode || e.which || 0;
+            if (key === 'F12' || (keyCode >= 112 && keyCode <= 123)) {
+                blockEvent(e);
+            }
+        }, { capture: true });
+
+        // 4. Active DevTools Open Detector (Detects Menu -> More Tools -> Developer Tools)
+        function checkDevToolsOpen() {
+            // Skip size delta check inside iframes or automated headless test runners
+            if (window.self !== window.top || navigator.webdriver) return;
+
+            const widthGap = window.outerWidth - window.innerWidth;
+            const heightGap = window.outerHeight - window.innerHeight;
+            const isDockedDevToolsOpen = widthGap > 170 || heightGap > 170;
+
+            if (isDockedDevToolsOpen) {
+                devtoolsShield.classList.add('active');
+                try { console.clear(); } catch (_e) {}
+            } else {
+                devtoolsShield.classList.remove('active');
+            }
+        }
+
+        window.addEventListener('resize', checkDevToolsOpen, { passive: true });
+        setInterval(checkDevToolsOpen, 1000);
+    })();
+    </script>
+</body>
+</html>
